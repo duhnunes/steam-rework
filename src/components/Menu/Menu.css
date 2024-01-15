@@ -1,0 +1,23 @@
+.menu-area{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  width:734px;
+  list-style:none;
+}
+.menu-link{
+  color:var(--gpText-Main);
+  text-transform:uppercase;
+  text-decoration:inherit;
+}
+.menu-link:focus,
+.menu-link:focus-visible{
+  color:var(--gpColorPrimary);
+}
+.logo{
+  background:url('../../assets/img/logo-steam.svg') no-repeat;
+  background-size:cover;
+  width:88px;
+  height:20.988px;
+  display:block;
+}

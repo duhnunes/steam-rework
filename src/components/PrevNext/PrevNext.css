@@ -1,0 +1,21 @@
+.prevNext-area{
+  display:flex;
+  align-items:center;
+  column-gap:8px;
+}
+
+.arrow{
+  border:solid var(--gpText-Dim);
+  border-width:0 3px 3px 0;
+  display:inline-block;
+  width:12px;
+  height:12px;
+  padding:3px;
+  cursor:pointer;
+}
+.prev{
+  rotate:135deg;
+}
+.next{
+  rotate:-45deg;
+}
