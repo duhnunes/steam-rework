@@ -45,8 +45,7 @@
   background-color:var(--gpBackground-Main20, rgba(14 20 27 / .2));
   color:var(--gpText-Main);
   border:none;
-  min-width:307px;
-  /* width:507px; - ORIGINAL */
+  width:507px;
   height:44px;
   border-radius:3px;
   padding:13px 39px 13px 19px;
