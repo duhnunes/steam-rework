@@ -10,26 +10,33 @@ import { VscClose, VscChromeRestore, VscChromeMinimize } from 'react-icons/vsc';
 function TitleBar() {
   return(
     <section className="titleBar">
-      {/* Prev-Next Pages */}
-      <PrevNext />
-      <Menu />
-      <MenuUser />
-      {/* Help/View/Minimaize/Close */}
-      <section className="closeMenu-area">
-        <article className="closeMenu-item">1</article>
-        <article className="closeMenu-item">2</article>
-        <article className="closeMenu-box">
-          <span className="icon-minimize">
-            <VscChromeMinimize />
-          </span>
-          <span className="icon-maximize">
-            <VscChromeRestore />
-          </span>
-          <span className="icon-close">
-            <VscClose />
-          </span>
-        </article>
-      </section>
+      <article className="group-1">
+        {/* Prev-Next Pages */}
+        <PrevNext />
+        {/* Menu List */}
+        <Menu />
+      </article>
+      <article className="group-2">
+        {/* Menu User */}
+        <MenuUser />
+        {/* Help/View/Minimaize/Close */}
+        <section className="closeMenu-area">
+          <article className="closeMenu-item">Help</article>
+          <article className="closeMenu-item">View
+          </article>
+          <article className="closeMenu-box">
+            <span className="icon-minimize">
+              <VscChromeMinimize />
+            </span>
+            <span className="icon-maximize">
+              <VscChromeRestore />
+            </span>
+            <span className="icon-close">
+              <VscClose />
+            </span>
+          </article>
+        </section>
+      </article>
     </section>
   );
 }

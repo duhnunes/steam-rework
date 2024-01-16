@@ -75,7 +75,7 @@
   --gpBackground-Tertiary: #212B45;
 
   --gpColorPrimary: #66C0F4;
-  --gpColorSecondary: #4B619B;
+  --gpColorSecondary: #4b619b;
   
   --gpAccentGreen: #A1CD44;
   --gpAccentRed: #CD5444;
@@ -104,4 +104,8 @@ body {
 button{
   background:none;
   border:none;
+}
+
+.active-menu{
+  background-color:var(--gpColorSecondary);
 }

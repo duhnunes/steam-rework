@@ -5,9 +5,7 @@ function Menu () {
     <>
       <ul className="menu-area">
         <li className="menu-item">
-          <a className="menu-link" href="./">
-            <i className="logo"></i>
-          </a>
+          <i className="logo"></i>
         </li>
         <li className="menu-item">
           <a className="menu-link" href="./#">
