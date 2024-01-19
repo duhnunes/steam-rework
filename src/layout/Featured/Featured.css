@@ -1,0 +1,8 @@
+.featured-area{
+  margin:86px 13.434% 0;
+  max-width:1388px;
+}
+.title-Main{
+  text-transform:uppercase;
+  font:var(--gpText-HeadingSmall);
+}

@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color:var(--gpText-Main);
-  background-color:var(--gpBackground-Highlight);
+  background:var(--gpLinearGradient);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,6 +32,7 @@
   /* Gradients */
   --gpGradient-StoreBackground:linear-gradient(180deg, var(--gpStoreDarkGrey) 0%, var(--gpStoreDarkerGrey) 80%);
   --gpGradient-LibraryBackground:radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%);
+  --gpLinearGradient:linear-gradient(180deg, #040011 13.77%, #202B3C 27.29%, #202B3C 27.29%);
 
   /* Colours */
   --gpColor-Blue: #1A9FFF;

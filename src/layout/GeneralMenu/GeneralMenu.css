@@ -81,6 +81,9 @@
 }
 .shopSettings-menu-item:last-child{
   background-color:rgba(118 128 140 / .10);
+  display:flex;
+  align-items:center;
+  padding:9px 9.5px;
 }
 .shopSettings-menu-link{
   color:var(--gpText-Main);

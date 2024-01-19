@@ -1,0 +1,13 @@
+.header-img{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:116px;
+  max-width:1980px;
+  height:623px;
+  overflow:hidden;
+}
+.header-img img{
+  width:100%;
+  height:100%;
+}
