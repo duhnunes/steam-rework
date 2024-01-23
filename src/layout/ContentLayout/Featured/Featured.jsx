@@ -1,29 +1,32 @@
 import './Featured.css';
 
-import featuredMain from '../../assets/img/image48.png';
-import otherImageGame from '../../assets/img/image49.png';
-import otherImageGame2 from '../../assets/img/image50.png';
-import otherImageGame3 from '../../assets/img/image52.png';
-import otherImageGame4 from '../../assets/img/image51.png';
-import logoSys from '../../assets/img/Windows8.svg';
-import favoriteWishlist from '../../assets/img/Favorite border.svg';
-import PrevNext from '../../components/PrevNext/PrevNext';
+import featuredMain from '../../../assets/img/image48.png';
+import otherImageGame from '../../../assets/img/image49.png';
+import otherImageGame2 from '../../../assets/img/image50.png';
+import otherImageGame3 from '../../../assets/img/image52.png';
+import otherImageGame4 from '../../../assets/img/image51.png';
+import logoSys from '../../../assets/img/Windows8.svg';
+import favoriteWishlist from '../../../assets/img/Favorite border.svg';
+import PrevNext from '../../../components/PrevNext/PrevNext';
+import H2 from '../../../components/H2/H2';
 
 export default function Featured() {
   return(
     <section className="featured-area">
-      {/* Title */}
-      <h2 className="title-Main">Featured</h2>
+
+      <H2 content="Featured" />
       {/* Feature */}
       <section className="featured-box">
-        {/* Arrow Left */}
+
         <PrevNext angle="arrow prev" id="prevPage" />
+
         {/* Featured Content */}
         <section className="featured-inside-area">
-          {/* Big Image */}
+
           <article className="featured-big-image">
             <img src={featuredMain} alt="Featured Game Big" />
           </article>
+
           {/* Featured Game Info */}
           <article className="featured-game-info">
             {/* Game Info */}
@@ -38,6 +41,7 @@ export default function Featured() {
               <img src={otherImageGame3} alt="Another screenshot from the same Game" />
               <img src={otherImageGame4} alt="Another screenshot from the same Game" />
             </section>
+
             {/* Category */}
             <section className="featured-category-area">
               {/* Category Buttons */}
@@ -48,11 +52,13 @@ export default function Featured() {
                 <span className="btn btn-dark btn-category">Open-world</span>
                 <span className="btn btn-dark btn-category">+</span>
               </article>
+
               {/* OS */}
               <article className="category-game-os">
                 <img src={logoSys} alt="OS Logo" />
               </article>
             </section>
+
             {/* Action: Wishlist/Price/Buy */}
             <section className="action-wishlist-buy">
               {/* Wishlist Button */}
@@ -60,6 +66,7 @@ export default function Featured() {
                 <span className="wishlist">Wishlist</span>
                 <img className="svgHeart" src={favoriteWishlist} alt="Heart to Favorite" />
               </div>
+
               {/* Price and Buy */}
               <article className="featured-buy">
                 <span className="featured-price">$59.99</span>
@@ -68,9 +75,10 @@ export default function Featured() {
             </section>
           </article>
         </section>
-        {/* Arrow Right */}
+
         <PrevNext angle="arrow next" id="nextPage" />
       </section>
+      
       {/* Bars with time */}
       <section className="featured-bar-timer">
         <span className="btn btn-timer"></span>

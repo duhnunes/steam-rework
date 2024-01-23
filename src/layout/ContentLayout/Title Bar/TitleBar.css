@@ -1,7 +1,7 @@
 .titleBar{
   width:100%;
   height:59px;
-  background-color:var(--gpBackground-Main);
+  background-color:var(--Background-Main);
   padding:18px 22px;
   display:flex;
   align-items:center;
@@ -27,7 +27,7 @@
   column-gap:18px;
 }
 .closeMenu-item{
-  color:var(--gpText-Dim);
+  color:var(--Text-Dim);
 }
 .closeMenu-box{
   display:inline-flex;
@@ -38,7 +38,7 @@
 .icon-minimize,
 .icon-maximize,
 .icon-close{
-  font:var(--gpText-HeadingMedium);
+  font:var(--Text-HeadingMedium);
   display:flex;
   align-items:center;
 }

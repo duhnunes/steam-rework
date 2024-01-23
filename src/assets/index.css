@@ -3,8 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color:var(--gpText-Main);
-  background:var(--gpLinearGradient);
+  color:var(--Text-Main);
+  background:var(--LinearGradient);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,83 +12,83 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* System greys */
-  --gpSystemLightestGrey: #DCDEDF;
-  --gpSystemLighterGrey: #B8BCBF;
-  --gpSystemLightGrey: #8B929A;
-  --gpSystemGrey: #67707B;
-  --gpSystemDarkGrey: #3D4450;
-  --gpSystemDarkerGrey: #23262E;
-  --gpSystemDarkestGrey: #0E141B;
+  --clr-SystemLightestGrey: #DCDEDF;
+  --clr-SystemLighterGrey: #B8BCBF;
+  --clr-SystemLightGrey: #8B929A;
+  --clr-SystemGrey: #67707B;
+  --clr-SystemDarkGrey: #3D4450;
+  --clr-SystemDarkerGrey: #23262E;
+  --clr-SystemDarkestGrey: #0E141B;
 
   /* Store blue greys */
-  --gpStoreLightestGrey: #CCB8E3;
-  --gpStoreLighterGrey: #A7BACC;
-  --gpStoreLightGrey: #7C8EA3;
-  --gpStoreGrey: #4e697d;
-  --gpStoreDarkGrey: #2A475E;
-  --gpStoreDarkerGrey: #1B2838;
-  --gpStoreDarkestGrey: #000F18;
+  --StoreLightestGrey: #CCB8E3;
+  --StoreLighterGrey: #A7BACC;
+  --StoreLightGrey: #7C8EA3;
+  --StoreGrey: #4e697d;
+  --StoreDarkGrey: #2A475E;
+  --StoreDarkerGrey: #1B2838;
+  --StoreDarkestGrey: #000F18;
 
   /* Gradients */
-  --gpGradient-StoreBackground:linear-gradient(180deg, var(--gpStoreDarkGrey) 0%, var(--gpStoreDarkerGrey) 80%);
-  --gpGradient-LibraryBackground:radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%);
-  --gpLinearGradient:linear-gradient(180deg, #040011 13.77%, #202B3C 27.29%, #202B3C 27.29%);
+  --Gradient-StoreBackground:linear-gradient(180deg, var(--StoreDarkGrey) 0%, var(--StoreDarkerGrey) 80%);
+  --Gradient-LibraryBackground:radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%);
+  --LinearGradient:linear-gradient(180deg, #040011 13.77%, #202B3C 27.29%, #202B3C 27.29%);
 
   /* Colours */
-  --gpColor-Blue: #1A9FFF;
-  --gpColor-BlueHi: #00BBFF;
-  --gpColor-Green: #5ba32b;
-  --gpColor-GreenHi: #59BF40;
-  --gpColor-Orange: #E35E1C;
-  --gpColor-Red: #D94126;
-  --gpColor-RedHi: #EE563B;
-  --gpColor-DustyBlue: #417a9b;
-  --gpColor-LightBlue: #B3DFFF;
-  --gpColor-Yellow: #FFC82C;
-  --gpColor-ChalkyBlue: #66C0F4;
+  --Color-Blue: #1A9FFF;
+  --Color-BlueHi: #00BBFF;
+  --Color-Green: #5ba32b;
+  --Color-GreenHi: #59BF40;
+  --Color-Orange: #E35E1C;
+  --Color-Red: #D94126;
+  --Color-RedHi: #EE563B;
+  --Color-DustyBlue: #417a9b;
+  --Color-LightBlue: #B3DFFF;
+  --Color-Yellow: #FFC82C;
+  --Color-ChalkyBlue: #66C0F4;
 
   /* Backgrounds */
-  --gpBackground-LightSofter: #6998bb24;
-  --gpBackground-LightSoft: #3b5a7280;
-  --gpBackground-LightMedium: #678BA670;
-  --gpBackground-LightHard: #93B8D480;
-  --gpBackground-LightHarder: #aacce6a6;
+  --Background-LightSofter: #6998bb24;
+  --Background-LightSoft: #3b5a7280;
+  --Background-LightMedium: #678BA670;
+  --Background-LightHard: #93B8D480;
+  --Background-LightHarder: #aacce6a6;
 
-  --gpBackground-DarkSofter: #0e141b33;
-  --gpBackground-DarkSoft: #3b5a7280;
-  --gpBackground-DarkMedium: #0e141b66;
-  --gpBackground-DarkHard: #0e141bcc;
+  --Background-DarkSofter: #0e141b33;
+  --Background-DarkSoft: #3b5a7280;
+  --Background-DarkMedium: #0e141b66;
+  --Background-DarkHard: #0e141bcc;
 
-  --gpBackground-Neutral-LightSofter: rgba(235 246 255 / .10);
-  --gpBackground-Neutral-LightSoft: rgba(235 246 255 / .20);
-  --gpBackground-Neutral-LightMedium: rgba(235 246 255 / .30);
-  --gpBackground-Neutral-LightHard: rgba(235 246 255 / .40);
-  --gpBackground-Neutral-LightHarder: rgba(235 246 255 / .50);
+  --Background-Neutral-LightSofter: rgba(235 246 255 / .10);
+  --Background-Neutral-LightSoft: rgba(235 246 255 / .20);
+  --Background-Neutral-LightMedium: rgba(235 246 255 / .30);
+  --Background-Neutral-LightHard: rgba(235 246 255 / .40);
+  --Background-Neutral-LightHarder: rgba(235 246 255 / .50);
 
   /* Color */
-  --gpText-Main: #F3F3F3;
-  --gpText-Dim: #76808C;
+  --Text-Main: #F3F3F3;
+  --Text-Dim: #76808C;
 
-  --gpBackground-Main: #0E141B;
-  --gpBackground-Highlight: #1E2329;
-  --gpBackground-Hover: #313843;
-  --gpBackground-Secondary: #14344B;
-  --gpBackground-Tertiary: #212B45;
+  --Background-Main: #0E141B;
+  --Background-Highlight: #1E2329;
+  --Background-Hover: #313843;
+  --Background-Secondary: #14344B;
+  --Background-Tertiary: #212B45;
 
-  --gpColorPrimary: #66C0F4;
-  --gpColorSecondary: #4b619b;
+  --ColorPrimary: #66C0F4;
+  --ColorSecondary: #4b619b;
   
-  --gpAccentGreen: #A1CD44;
-  --gpAccentRed: #CD5444;
-  --gpAccentYellow: #C1B15F;
+  --AccentGreen: #A1CD44;
+  --AccentRed: #CD5444;
+  --AccentYellow: #C1B15F;
 
   /* Fonts */
-  --gpText-HeadingLarge: normal 700 26px/1.4 "Motiva Sans", Arial, Sans-serif;
-  --gpText-HeadingMedium: normal 700 22px/1.4 "Motiva Sans", Arial, Sans-serif;
-  --gpText-HeadingSmall: normal 700 18px/1.4 "Motiva Sans", Arial, Sans-serif;
-  --gpText-BodyLarge: normal 400 16px/1.4 "Motiva Sans", Arial, Sans-serif;
-  --gpText-BodyMedium: normal 400 14px/1.4 "Motiva Sans", Arial, Sans-serif;
-  --gpText-BodySmall: normal 400 12px/1.4 "Motiva Sans", Arial, Sans-serif;
+  --Text-HeadingLarge: normal 700 26px/1.4 "Motiva Sans", Arial, Sans-serif;
+  --Text-HeadingMedium: normal 700 22px/1.4 "Motiva Sans", Arial, Sans-serif;
+  --Text-HeadingSmall: normal 700 18px/1.4 "Motiva Sans", Arial, Sans-serif;
+  --Text-BodyLarge: normal 400 16px/1.4 "Motiva Sans", Arial, Sans-serif;
+  --Text-BodyMedium: normal 400 14px/1.4 "Motiva Sans", Arial, Sans-serif;
+  --Text-BodySmall: normal 400 12px/1.4 "Motiva Sans", Arial, Sans-serif;
 }
 
 *{
@@ -108,5 +108,5 @@ button{
 }
 
 .active-menu{
-  background-color:var(--gpColorSecondary);
+  background-color:var(--ColorSecondary);
 }

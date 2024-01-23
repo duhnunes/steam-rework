@@ -6,13 +6,13 @@
   list-style:none;
 }
 .menu-link{
-  color:var(--gpText-Main);
+  color:var(--Text-Main);
   text-transform:uppercase;
   text-decoration:inherit;
 }
 .menu-link:focus,
 .menu-link:focus-visible{
-  color:var(--gpColorPrimary);
+  color:var(--ColorPrimary);
 }
 .logo{
   background:url('../../assets/img/logo-steam.svg') no-repeat;

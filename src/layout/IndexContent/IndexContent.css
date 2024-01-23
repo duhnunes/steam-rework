@@ -1,0 +1,8 @@
+.container{
+  margin:86px 13.434%;
+  max-width:1388px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  row-gap:70px;
+}

@@ -5,9 +5,12 @@
   position:relative;
 }
 .btn-dark{
-  background-color:var(--gpBackground-Highlight);
-  color:var(--gpText-Dim);
+  background-color:var(--Background-Highlight);
+  color:var(--Text-Dim);
 }
 .btn-secondary{
-  background-color:var(--gpColorSecondary);
+  background-color:var(--ColorSecondary);
+}
+.btn-see-more{
+  font:var(--Text-BodyLarge);
 }

@@ -1,0 +1,96 @@
+.offers-area{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  row-gap:30px;
+  align-items:center;
+}
+.offers-area__header-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+}
+.offers-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  padding:20px 15px;
+  background-color:var(--Background-Main20, rgba(14 20 27 / .2));
+  border-radius:5px;
+}
+
+.offers-cards-area{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.card-body{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:8px;
+  margin:0 15px;
+  padding:15px;
+  background-color:var(--Background-Main);
+}
+.card-img{
+  width:100%;
+  height:197px;
+  border-radius:3px;
+}
+.card-title{
+  font:var(--Text-HeadingMedium);
+  color:var(--Text-Main);
+  width:100%;
+}
+.card-info{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.card-info-win{
+  width:25px;
+  height:25px;
+}
+.card-info__time-offer{
+  color:var(--Text-Dim);
+  font:var(--Text-BodyMedium);
+}
+.card-info-price{
+  display:flex;
+  align-items:center;
+  column-gap:10px;
+}
+.card-info__discount{
+  padding:8px 10px;
+  background-color:var(--AccentGreen);
+  border-radius:3px;
+  font:var(--Text-HeadingSmall);
+  color:var(--Background-Main);
+  display:flex;
+  align-items:center;
+}
+.card-info__discount-diff{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.card-info__discount-diff .discount-before{
+  color:var(--Background-Hover);
+  font:var(--Text-HeadingSmall);
+  text-decoration:line-through;
+}
+.card-info__discount-diff .discount-after{
+  color:var(--AccentGreen);
+  font:var(--Text-HeadingSmall);
+}
+
+.card-info__wishlist{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

@@ -11,15 +11,15 @@
   position:absolute;
   top:-4px;
   right:-4px;
-  background-color:var(--gpColorPrimary);
+  background-color:var(--ColorPrimary);
   width:16px;
   height:16px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  font:var(--gpText-BodySmall);
-  color:var(--gpBackground-Main);
+  font:var(--Text-BodySmall);
+  color:var(--Background-Main);
 }
 .menuUser{
   padding:4px 3px;
@@ -27,7 +27,7 @@
   display:flex;
   align-items:center;
   column-gap:8px;
-  background-color:var(--gpBackground-Highlight);
+  background-color:var(--Background-Highlight);
   border-radius:3px;
   cursor:pointer;
 }
@@ -37,17 +37,17 @@
   object-fit:fill;
 }
 .userName{
-  color:var(--gpText-Main);
-  font:var(--gpText-BodyMedium);
+  color:var(--Text-Main);
+  font:var(--Text-BodyMedium);
 }
 .balance-wallet{
-  color:var(--gpText-Dim);
+  color:var(--Text-Dim);
 }
 .arrowdown{
   display:flex;
   align-items:center;
   justify-content:center;
-  border-color:var(--gpText-Main);
+  border-color:var(--Text-Main);
   translate:0 -3px;
   width:6px;
   height:6px;

@@ -1,9 +1,9 @@
 import React from 'react';
 
 import './TitleBar.css';
-import PrevNext from '../../components/PrevNext/PrevNext';
-import Menu from '../../components/Menu/Menu';
-import MenuUser from '../../components/MenuUser/MenuUser';
+import PrevNext from '../../../components/PrevNext/PrevNext';
+import Menu from '../../../components/Menu/Menu';
+import MenuUser from '../../../components/MenuUser/MenuUser';
 
 import { VscClose, VscChromeRestore, VscChromeMinimize } from 'react-icons/vsc';
 

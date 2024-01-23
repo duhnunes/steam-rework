@@ -1,9 +1,9 @@
-import GeneralMenu from './layout/GeneralMenu/GeneralMenu';
-import Header from './layout/Header/Header';
-import TitleBar from './layout/Title Bar/TitleBar';
+import GeneralMenu from './layout/ContentLayout/GeneralMenu/GeneralMenu';
+import Header from './layout/ContentLayout/Header/Header';
+import TitleBar from './layout/ContentLayout/Title Bar/TitleBar';
+import IndexContent from './layout/IndexContent/IndexContent';
 
 import headerImg from './assets/img/header-steam-summer-sale.gif';
-import Featured from './layout/Featured/Featured';
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <TitleBar />
       <GeneralMenu />
       <Header src={headerImg} alt="Steam summer sale Banner" />
-      <Featured />
+      <IndexContent />
     </>
   );
 }
