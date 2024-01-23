@@ -6,3 +6,125 @@
   text-transform:uppercase;
   font:var(--gpText-HeadingSmall);
 }
+.featured-box{
+  width:100%;
+  height:528px;
+  margin:30px auto;
+  padding:20px 15px;
+  background-color:var(--gpBackground-Main20, rgba(14 20 27 / .2));
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.featured-inside-area{
+  display:flex;
+  align-items:center;
+  gap:17px;
+  padding:15px;
+  background-color:var(--gpBackground-Main20, #0E141B);
+  border-radius:5px;
+  width:100%;
+}
+.featured-big-image{
+  width:766px;
+  height:458px;
+  border-radius:3px;
+}
+.featured-big-image img{
+  width:100%;
+  height:100%;
+}
+
+.featured-game-info{
+  display:flex;
+  flex-direction:column;
+  gap:17px;
+  width:468px;
+}
+.featured-game-box{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:11px;
+}
+.featured-game-title{
+  font:var(--gpText-HeadingLarge);
+}
+.featured-game-text{
+  font:var(--gpText-BodyMedium);
+}
+.featured-game-imgs{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  gap:7px;
+}
+.featured-category-area{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  height:30px;
+}
+.category-buttons{
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+.btn-category{
+  font:var(--gpText-BodySmall);
+}
+
+.category-game-os{
+  display:flex;
+  align-items:center;
+}
+
+.action-wishlist-buy{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.btn-category{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.wishlist{
+  font:var(--gpText-BodyLarge);
+  color:var(--gpText-Main, var(--gpText-Main, #F3F3F3));
+}
+.svgHeart{
+  width:24px;
+  height:24px;
+}
+
+.featured-buy{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.featured-price{
+  font:var(--gpText-HeadingSmall);
+}
+.btn-buy{
+  width:100%;
+  height:100%;
+  font:var(--gpText-BodyLarge);
+  color:var(--gpText-Main);
+}
+
+/* BAR TIMER TO CHANGE GAME VIEWE */
+.featured-bar-timer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  column-gap:10px;
+}
+.btn-timer{
+  background-color:var(--gpBackground-Main);
+  border-radius:40px;
+}
