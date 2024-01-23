@@ -12,7 +12,8 @@ function TitleBar() {
     <section className="titleBar">
       <article className="group-1">
         {/* Prev-Next Pages */}
-        <PrevNext />
+        <PrevNext angle="arrow prev" id="prevPage" />
+        <PrevNext angle="arrow next" id="nextPage" />
         {/* Menu List */}
         <Menu />
       </article>

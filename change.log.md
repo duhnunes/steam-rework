@@ -2,6 +2,7 @@
 ## 0.0.4
 - Add Featured Area
 - Change to ALPHA Version
+- Add Arrow to Featured Area
 
 ## 0.0.3
 - Add Header Image

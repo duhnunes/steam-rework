@@ -7,6 +7,7 @@ import otherImageGame3 from '../../assets/img/image52.png';
 import otherImageGame4 from '../../assets/img/image51.png';
 import logoSys from '../../assets/img/Windows8.svg';
 import favoriteWishlist from '../../assets/img/Favorite border.svg';
+import PrevNext from '../../components/PrevNext/PrevNext';
 
 export default function Featured() {
   return(
@@ -16,7 +17,7 @@ export default function Featured() {
       {/* Feature */}
       <section className="featured-box">
         {/* Arrow Left */}
-        {/* Arrow Right */}
+        <PrevNext angle="arrow prev" id="prevPage" />
         {/* Featured Content */}
         <section className="featured-inside-area">
           {/* Big Image */}
@@ -67,6 +68,8 @@ export default function Featured() {
             </section>
           </article>
         </section>
+        {/* Arrow Right */}
+        <PrevNext angle="arrow next" id="nextPage" />
       </section>
       {/* Bars with time */}
       <section className="featured-bar-timer">
@@ -77,6 +80,7 @@ export default function Featured() {
         <span className="btn btn-timer"></span>
         <span className="btn btn-timer"></span>
       </section>
+
     </section>
   );
 }
