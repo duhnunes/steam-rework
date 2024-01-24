@@ -70,7 +70,7 @@ export default function Featured() {
               {/* Price and Buy */}
               <article className="featured-buy">
                 <span className="featured-price">$59.99</span>
-                <span className="btn btn-dark btn-secondary btn-buy">Buy Now</span>
+                <span className="btn btn-secondary btn-buy">Buy Now</span>
               </article>
             </section>
           </article>

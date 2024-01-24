@@ -5,7 +5,7 @@ import propTypes from 'prop-types';
 import logoWin from '../../../../assets/img/Windows8.svg';
 import wishlist from '../../../../assets/img/Favorite border.svg';
 
-export default function CardGames({cardImg, gameTitle}) {
+export default function CardGames({cardImg, gameTitle, temp, off, priceNew, price}) {
   return(
     <article className="card-body">
       <img src={cardImg} alt="Game Card Offer" className="card-img" />
@@ -15,16 +15,14 @@ export default function CardGames({cardImg, gameTitle}) {
       <section className="card-info">
         <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
 
-        <span className="card-info__time-offer">
-                Until Nov 2
-        </span>
 
         <section className="card-info-price">
-          <span className="card-info__discount">-20%</span>
+          <span className="card-info__time-offer">{temp}</span>
+          <span className="card-info__discount">{off}</span>
 
           <article className="card-info__discount-diff">
-            <span className="discount-before">$59.99</span>
-            <span className="discount-after">$47.99</span>
+            <span className="discount-before">{price}</span>
+            <span className="discount-after">{priceNew}</span>
           </article>
         </section>
 
@@ -38,5 +36,9 @@ export default function CardGames({cardImg, gameTitle}) {
 
 CardGames.propTypes = {
   cardImg: propTypes.string,
-  gameTitle: propTypes.string
+  gameTitle: propTypes.string,
+  temp: propTypes.string,
+  off: propTypes.string,
+  price: propTypes.string,
+  priceNew: propTypes.string
 }.isRequired;

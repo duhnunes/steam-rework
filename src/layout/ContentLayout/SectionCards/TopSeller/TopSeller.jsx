@@ -46,8 +46,8 @@ export default function TopSeller({headerTitle}) {
           <CardTopSellerPromo
             cardImg={card4}
             gameTitle="Fallout 76"
-            price="$7.99"
-            priceOld="$39.99"
+            price="$39.99"
+            priceNew="$7.99"
             off="-80%"
           />
 
@@ -60,8 +60,8 @@ export default function TopSeller({headerTitle}) {
           <CardTopSellerPromo
             cardImg={card6}
             gameTitle="Red Dead Redemption 2"
-            price="$23.99"
-            priceOld="$59.99"
+            price="$59.99"
+            priceNew="$23.99"
             off="-60%"
           />
           

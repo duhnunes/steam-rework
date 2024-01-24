@@ -33,7 +33,9 @@
   display:block;
   padding:10px 29px;
 }
-.generalNavbar-link:hover,
+.generalNavbar-link:hover{
+  background-color:var(--Background-Hover);
+}
 .generalNavbar-link:focus,
 .generalNavbar-link:focus-visible,
 .generalNavbar-link:active{
@@ -92,7 +94,9 @@
   text-decoration:inherit;
   padding:10px 29px;
 }
-.shopSettings-menu-link:hover,
+.shopSettings-menu-link:hover{
+  background-color:var(--Background-Hover);
+}
 .shopSettings-menu-link:focus,
 .shopSettings-menu-link:focus-visible{
   background-color:var(--ColorSecondary);

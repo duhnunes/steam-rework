@@ -34,7 +34,7 @@
 .card-info-price{
   display:flex;
   align-items:center;
-  column-gap:10px;
+  column-gap:7px;
 }
 .card-info__discount{
   padding:8px 10px;
@@ -93,6 +93,15 @@
 }
 
 /* RECENTLY UPDATED */
+.card-info-btns{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+}
+.__recent-info{
+  flex-direction:column;
+}
 .__recent-title{
   font:var(--Text-HeadingSmall);
 }
@@ -102,6 +111,7 @@
 .__recent-up{
   width:16.5rem;
   height:343px;
+  justify-content:space-between;
 }
 
 /* NEW & TRADING */

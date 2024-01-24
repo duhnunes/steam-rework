@@ -26,8 +26,8 @@ export default function Under5({headerTitle}) {
             gameTitle="American Truck Simulator"
             temp="Until Oct 31"
             off="-75%"
-            priceOld="$19.99"
-            price="$4.99"
+            price="$19.99"
+            priceNew="$4.99"
           />
 
           <CardUnder5
@@ -35,8 +35,8 @@ export default function Under5({headerTitle}) {
             gameTitle="Batman™: Arkham Knight"
             temp="Until Oct 31"
             off="-80%"
-            priceOld="$19.99"
-            price="$3.99"
+            price="$19.99"
+            priceNew="$3.99"
           />
 
           <CardUnder5
@@ -44,8 +44,8 @@ export default function Under5({headerTitle}) {
             gameTitle="Mortal Kombat 11"
             temp="Until Oct 31"
             off="-90%"
-            priceOld="$49.99"
-            price="$4.99"
+            price="$49.99"
+            priceNew="$4.99"
           />
           
         </section>

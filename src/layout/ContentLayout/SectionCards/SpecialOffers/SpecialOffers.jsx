@@ -24,16 +24,28 @@ export default function SpecialOffers({headerTitle}) {
           <CardGames
             cardImg={card1}
             gameTitle="The Last of Us: Part 1"
+            temp="Until Nov 2"
+            off="-20%"
+            price="$59.99"
+            priceNew="$47.99"
           />
 
           <CardGames
             cardImg={card2}
             gameTitle="Iratus: Lord of the Dead"
+            temp="Until Nov 6"
+            off="-87%"
+            price="$29.99"
+            priceNew="$3.89"
           />
 
           <CardGames
             cardImg={card3}
             gameTitle="Beyond: Two Souls"
+            temp="Only Today!"
+            off="-60%"
+            price="$19.99"
+            priceNew="$7.99"
           />
           
         </section>

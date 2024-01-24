@@ -3,11 +3,21 @@
 - [Change] to change things
 - [Improvement] to Improve things
 - [Fix] to Fix things
-- [Transform] to Transform Pure HTML in Component
+- [Transform] to Transform Pure HTML in Component'
+- [Delete] to Delete things
 
 
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal organization.  
+
+## 0.0.5.1
+- [Fix] Missing propTypes
+- [Fix] Names propTypes
+- [Fix] Positions from Recently Updated
+- [Fix] Gap from Info Price
+- [Fix] Color Hover from MenuPages
+- [Fix] All Button Hover
+- [Delete] Duplicate Files
 
 ## 0.0.5
 - [Transform] Header Area Cards in Component (HeaderOffers)

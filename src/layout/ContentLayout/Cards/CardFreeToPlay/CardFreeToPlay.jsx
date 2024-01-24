@@ -17,7 +17,7 @@ export default function CardFreeToPlay({cardImg, gameTitle}) {
 
         <section className="card-info-price">
           <span className="card-info__time-offer __text-free">Free</span>
-          <span className="btn card-info__discount __btn-playnow">Play Now</span>
+          <span className="btn btn-accent __btn-playnow">Play Now</span>
         </section>
 
       </section>
