@@ -1,4 +1,4 @@
-import GeneralMenu from './layout/ContentLayout/GeneralMenu/GeneralMenu';
+import GeneralMenu from './layout/GeneralMenu/GeneralMenu';
 import Header from './layout/ContentLayout/Header/Header';
 import TitleBar from './layout/ContentLayout/Title Bar/TitleBar';
 import IndexContent from './layout/IndexContent/IndexContent';

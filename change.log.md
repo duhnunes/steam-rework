@@ -9,6 +9,17 @@
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal organization.  
 
+## 0.0.5
+- [Transform] Header Area Cards in Component (HeaderOffers)
+- [Transform] Card in Component (CardGames)
+- [Add] Browse Steam Category section cards
+- [Fix] Components coming in front of the menus
+- [Add] Free to play section cards
+- [Add] Recently Updated section cards
+- [Add] New and Trading section cards
+- [Add] Top Sellers section cards
+- [Add] Under $5 section cards
+
 
 ## 0.0.4
 - [Add] Featured Area
@@ -25,8 +36,8 @@
 - [Add] change.log file
 
 ## 0.0.2
-- [Add] GeneralMenu
 - [Add] Menu Pages
 
 ## 0.0.1
-- [Create] Files
+- [Add] Create Project and Configurations
+- [Add] GeneralMenu

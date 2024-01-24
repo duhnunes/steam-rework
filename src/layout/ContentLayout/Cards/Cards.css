@@ -1,43 +1,15 @@
-.offers-area{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  row-gap:30px;
-  align-items:center;
-}
-.offers-area__header-title{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  width:100%;
-}
-.offers-box{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  width:100%;
-  padding:20px 15px;
-  background-color:var(--Background-Main20, rgba(14 20 27 / .2));
-  border-radius:5px;
-}
-
-.offers-cards-area{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+/* GENERAL */
 .card-body{
   display:flex;
   flex-direction:column;
   align-items:flex-end;
-  gap:8px;
-  margin:0 15px;
+  gap:8px;;
   padding:15px;
   background-color:var(--Background-Main);
+  width:23rem;
 }
 .card-img{
   width:100%;
-  height:197px;
   border-radius:3px;
 }
 .card-title{
@@ -93,4 +65,76 @@
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+
+/* CATEGORY */
+.__cat{
+  position:relative;
+  padding:0;
+  width:13.5rem;
+}
+.cat-title{
+  position:absolute;
+  left:50%;
+  top:50%;
+  translate:-50% -50%;
+  font:var(--Text-HeadingMedium);
+  white-space:nowrap;
+}
+
+/* FREE TO PLAY */
+.__btn-playnow{
+  padding:11px 16px;
+  font:var(--Text-HeadingSmall);
+}
+.__text-free{
+  font:var(--Text-HeadingSmall);
+}
+
+/* RECENTLY UPDATED */
+.__recent-title{
+  font:var(--Text-HeadingSmall);
+}
+.__recent-text{
+  font:var(--Text-BodyLarge);
+}
+.__recent-up{
+  width:16.5rem;
+  height:343px;
+}
+
+/* NEW & TRADING */
+.__newtrading-price{
+  font:var(--Text-HeadingSmall);
+}
+
+/* TOP SELLERS */
+.__topseller-card-info{
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  height:100%;
+}
+.card-sub__topseller{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+}
+.__topseller-cards-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:repeat(3, 1fr);
+  gap:16px;
+}
+.__topseler-card-inside-grid{
+  flex-direction:row;
+  width:100%;
+  height:131px;
+  gap:20px;
+}
+.__topseller-img{
+  height:101px;
+  width:230px;
 }

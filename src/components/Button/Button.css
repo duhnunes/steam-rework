@@ -14,3 +14,34 @@
 .btn-see-more{
   font:var(--Text-BodyLarge);
 }
+.btn-border{
+  border:1px solid var(--Background-Highlight);
+}
+.btn-recent{
+  font:var(--Text-BodyLarge);
+}
+
+/* BAR TIMER TO CHANGE GAME VIEWE */
+.featured-bar-timer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  column-gap:10px;
+}
+.btn-timer{
+  background-color:var(--Background-Main);
+  width:35px;
+  border-radius:40px;
+  position:relative;
+}
+.btn-timer:first-child::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:70%;
+  background-color:var(--ColorSecondary);
+  border-radius:inherit;
+  transition:.15s ease-in;
+}

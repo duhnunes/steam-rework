@@ -1,0 +1,23 @@
+.section-area{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  row-gap:30px;
+  align-items:center;
+}
+.section-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  padding:20px 15px;
+  background-color:var(--Background-Main20, rgba(14 20 27 / .2));
+  border-radius:5px;
+}
+.section-cards-area{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  margin:0 15px;
+}
