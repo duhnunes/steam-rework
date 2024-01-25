@@ -64,6 +64,13 @@
   align-items:center;
   color:var(--Text-Dim);
 }
+.btn-func{
+  color:var(--Text-Dim);
+  width:27px;
+  height:27px;
+  padding:4px;
+  background-color:rgba(118 128 140 / .05);
+}
 
 /* BAR TIMER TO CHANGE GAME VIEWE */
 .featured-bar-timer{

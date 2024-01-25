@@ -17,6 +17,7 @@ function TitleBar() {
         {/* Menu List */}
         <Menu />
       </article>
+      
       <article className="group-2">
         {/* Menu User */}
         <MenuUser />
