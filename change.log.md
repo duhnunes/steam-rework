@@ -10,6 +10,12 @@
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal organization.  
 
+## 0.0.6
+- [Add] Games Streaming Now
+- [Delete] Duplicate Files
+- [Fix] Btn color text
+- [Add] Footer
+
 ## 0.0.5.1
 - [Fix] Missing propTypes
 - [Fix] Names propTypes

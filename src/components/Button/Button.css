@@ -3,11 +3,11 @@
   border-radius:3px;
   cursor:pointer;
   position:relative;
+  color:var(--Text-Main);
   transition:all .15s ease-in-out;
 }
 .btn-dark{
   background-color:var(--Background-Highlight);
-  color:var(--Text-Dim);
 }
 .btn-dark:hover{
   background-color:var(--Background-Hover);
@@ -37,6 +37,7 @@
   align-items:center;
   gap:10px;
   font:var(--Text-BodySmall);
+  color:var(--Text-Dim);
 }
 .btn-buy{
   width:100%;
@@ -50,6 +51,18 @@
 }
 .btn-accent:hover{
   background-color:var(--Color-Green);
+}
+.btn-social{
+  background-color:rgba(118 128 140 / .05);
+  padding:10px;
+}
+.btn-social:hover{
+  background-color:rgba(118 128 140 / .2);
+}
+.btn-social-icon{
+  display:flex;
+  align-items:center;
+  color:var(--Text-Dim);
 }
 
 /* BAR TIMER TO CHANGE GAME VIEWE */

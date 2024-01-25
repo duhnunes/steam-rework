@@ -4,6 +4,7 @@ import TitleBar from './layout/ContentLayout/Title Bar/TitleBar';
 import IndexContent from './layout/IndexContent/IndexContent';
 
 import headerImg from './assets/img/header-steam-summer-sale.gif';
+import Footer from './layout/Footer/Footer';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <GeneralMenu />
       <Header src={headerImg} alt="Steam summer sale Banner" />
       <IndexContent />
+      <Footer />
     </>
   );
 }

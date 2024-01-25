@@ -100,11 +100,28 @@
 body {
   min-width: 320px;
   min-height: 100svh;
+  overflow:overlay;
 }
 
 button{
   background:none;
   border:none;
+}
+
+a{
+  text-decoration:inherit;
+  color:var(--Text-Main);
+}
+
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-track{
+  background:var(--Gradient-LibraryBackground);
+}
+::-webkit-scrollbar-thumb{
+  border-radius:10px;
+  background-color:var(--Background-LightMedium);
 }
 
 .active-menu{

@@ -8,6 +8,7 @@ import RecentlyUpdated from '../ContentLayout/SectionCards/RecentlyUpdated/Recen
 import NewTrading from '../ContentLayout/SectionCards/NewTrading/NewTrading';
 import TopSeller from '../ContentLayout/SectionCards/TopSeller/TopSeller';
 import Under5 from '../ContentLayout/SectionCards/Under5/Under5';
+import GamesStreaming from '../ContentLayout/SectionCards/GamesStreaming/GamesStreaming';
 
 export default function IndexContent() {
   return(
@@ -20,6 +21,7 @@ export default function IndexContent() {
       <NewTrading headerTitle="New and Trading" />
       <TopSeller headerTitle="Top Sellers" />
       <Under5 headerTitle="Under $5" />
+      <GamesStreaming headerTitle="Games Streaming Now" />
     </main>
   );
 }

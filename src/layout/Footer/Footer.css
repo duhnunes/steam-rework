@@ -1,0 +1,59 @@
+.footer{
+  background-color:var(--Background-Highlight);
+  width:100%;
+  padding:56px 13.434%;
+  /* margin:0; */
+}
+.footer-body{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+.footer-menu{
+  display:flex;
+  column-gap:100px;
+}
+.footer-brand-area{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  width:370px;
+  row-gap:30px;
+}
+.footer-brand{
+  display:flex;
+  align-items:center;
+  column-gap:15px;
+}
+.logoValve{
+  height:30px;
+}
+.logoSteam{
+  height:30px;
+  color:var(--Text-Dim);
+}
+.disclaimer-text{
+  color:var(--Text-Dim);
+  font:var(--Text-BodyLarge);
+}
+
+/* .footer-menu-box{
+
+} */
+.footer-menu-list{
+  list-style:none;
+}
+.footer-menu-item{
+  margin:8px 0;
+}
+.footer-menu-link{
+  font:var(--Text-BodyLarge);
+}
+.footer-menu-link:hover{
+  color:var(--ColorPrimary);
+}
+.footer-social{
+  display:flex;
+  align-items:center;
+  column-gap:15px;
+}

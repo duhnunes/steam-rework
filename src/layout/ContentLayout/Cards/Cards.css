@@ -148,3 +148,36 @@
   height:101px;
   width:230px;
 }
+
+/* GAMES STREAMING */
+.card-info-viewers{
+  display:flex;
+  align-items:center;
+  column-gap:10px;
+}
+.card-info-viewers-icon{
+  color:var(--ColorPrimary);
+  width:22px;
+  height:22px;
+}
+.card-info-viewers-counter{
+  color:var(--ColorPrimary);
+  font:var(--Text-BodyLarge);
+}
+.card-player{
+  position:relative;
+  width:100%;
+}
+.card-player-btn{
+  position:absolute;
+  width:58px;
+  height:58px;
+  left:50%;
+  top:50%;
+  translate:-50% -50%;
+  background-color:var(--Background-Main50, rgba(14 20 27 / .5));
+  border-radius:3px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
