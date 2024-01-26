@@ -36,6 +36,7 @@
 .generalNavbar-link:hover{
   background-color:var(--Background-Hover);
 }
+.generalNavbar-link.active-menu,
 .generalNavbar-link:focus,
 .generalNavbar-link:focus-visible,
 .generalNavbar-link:active{

@@ -2,12 +2,13 @@ import './MenuUser.css';
 import avatar from '../../assets/img/logao.jpg';
 import { useState } from 'react';
 import DropdownList from '../DropdownList/DropdownList';
-import ListItem from '../DropdownList/ListItem/ListItem';
+import ListItem from '../DropdownList/DropdownListItem/DropdownListItem';
 
 
 // Icons
 import { FaUserGroup, FaBell, FaEnvelopeCircleCheck, FaGear } from 'react-icons/fa6';
 import { IoMegaphone } from 'react-icons/io5';
+import { MdOutlineMonitor } from 'react-icons/md';
 
 const MenuUser = () => {
 
@@ -58,7 +59,7 @@ const MenuUser = () => {
       </article>
 
       {/* Menu User */}
-      <section className="menuUser" onClick={() => {setOpenUserMenu(!openUserMenu);}}>
+      <article className="menuUser btn btn-dark" onClick={() => {setOpenUserMenu(!openUserMenu);}}>
         {/* Avatar */}
         <img className="avatar" src={avatar} alt="Avatar User" />
         {/* User Name */}
@@ -82,7 +83,12 @@ const MenuUser = () => {
             </DropdownList>
           </div>
         </section>
-      </section>
+      </article>
+
+      <article className="btn btn-dark">
+        <MdOutlineMonitor />
+      </article>
+      
     </section>
   );
 };

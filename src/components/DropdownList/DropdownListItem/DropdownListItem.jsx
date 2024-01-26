@@ -1,7 +1,7 @@
 import '../DropdownList.css';
 import propTypes from 'prop-types';
 
-export default function ListItem({value}) {
+export default function DropdownListItem({value}) {
   return(
     <li className="dp-menu-item">
       <a href="./#" className="dp-menu-link">{value}</a>
@@ -9,6 +9,6 @@ export default function ListItem({value}) {
   );
 }
 
-ListItem.propTypes = {
+DropdownListItem.propTypes = {
   value: propTypes.string
 }.isRequired;

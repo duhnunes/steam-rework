@@ -1,83 +1,80 @@
-import { useState } from 'react';
 import DropdownList from '../DropdownList/DropdownList';
-import ListItem from '../DropdownList/ListItem/ListItem';
+import DropdownListItem from '../DropdownList/DropdownListItem/DropdownListItem';
 import './Menu.css';
 
 function Menu () {
   
-  const [openStore, setOpenStore] = useState(false);
-  const [openCommunity, setCommunity] = useState(false);
-  const [openMenuUser, setMenuUser] = useState(false);
-  const [openLibrary, setLibrary] = useState(false);
-
   return(
     <>
       <ul className="menu-area">
         <li className="menu-item">
           <i className="logo"></i>
         </li>
-        <li className="menu-item" onClick={() => {setOpenStore(!openStore);}}>
+        <li className="menu-item">
           <a className="menu-link" href="./#">
             store
           </a>
-          <section className={`dropdown-area userMenu ${openStore? 'active' : ''}`}>
+          <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
               <DropdownList>
-                <ListItem value="Home" />
-                <ListItem value="Browse" />
-                <ListItem value="Discover" />
-                <ListItem value="Wishlist" />
-                <ListItem value="Cart" />
-                <ListItem value="Points Shop" />
-                <ListItem value="Gift Cards" />
-                <ListItem value="News" />
-                <ListItem value="Stats" />
+                <DropdownListItem value="Home" />
+                <DropdownListItem value="Browse" />
+                <DropdownListItem value="Discover" />
+                <DropdownListItem value="Wishlist" />
+                <DropdownListItem value="Cart" />
+                <DropdownListItem value="Points Shop" />
+                <DropdownListItem value="Gift Cards" />
+                <DropdownListItem value="News" />
+                <DropdownListItem value="Stats" />
               </DropdownList>
             </div>
           </section>
         </li>
-        <li className="menu-item" onClick={() => {setCommunity(!openCommunity);}}>
+        <li className="menu-item">
           <a className="menu-link" href="./#">
             community
           </a>
-          <section className={`dropdown-area userMenu ${openCommunity? 'active' : ''}`}>
+          <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
               <DropdownList>
-                <ListItem value="Home" />
-                <ListItem value="Discussions" />
-                <ListItem value="Market" />
-                <ListItem value="Workshop" />
-                <ListItem value="Broadcasts" />
+                <DropdownListItem value="Home" />
+                <DropdownListItem value="Discussions" />
+                <DropdownListItem value="Market" />
+                <DropdownListItem value="Workshop" />
+                <DropdownListItem value="Broadcasts" />
               </DropdownList>
             </div>
           </section>
         </li>
-        <li className="menu-item" onClick={() => {setMenuUser(!openMenuUser);}}>
+        <li className="menu-item">
           <a className="menu-link" href="./#">
             DuH Nunes
           </a>
-          <section className={`dropdown-area userMenu ${openMenuUser? 'active' : ''}`}>
+          <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
               <DropdownList>
-                <ListItem value="Profile" />
-                <ListItem value="Friends & Groups" />
-                <ListItem value="Inventory" />
-                <ListItem value="Badges" />
+                <DropdownListItem value="Profile" />
+                <DropdownListItem value="Friends & Groups" />
+                <DropdownListItem value="Inventory" />
+                <DropdownListItem value="Badges" />
               </DropdownList>
             </div>
           </section>
         </li>
-        <li className="menu-item" onClick={() => {setLibrary(!openLibrary);}}>
+        <li className="menu-item">
           <a className="menu-link" href="./#">
             library
           </a>
-          <section className={`dropdown-area userMenu ${openLibrary? 'active' : ''}`}>
+          <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
               <DropdownList>
-                <ListItem value="Profile" />
-                <ListItem value="Friends & Groups" />
-                <ListItem value="Inventory" />
-                <ListItem value="Badges" />
+                <DropdownListItem value="Home" />
+                <DropdownListItem value="Hidden Games" />
+                <DropdownListItem value="Collections" />
+                <DropdownListItem value="Soundtracks" />
+                <DropdownListItem value="Game Servers" />
+                <DropdownListItem value="Activate a Product" />
+                <DropdownListItem value="Add a non-Steam Game" />
               </DropdownList>
             </div>
           </section>

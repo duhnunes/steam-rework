@@ -8,8 +8,21 @@
 - [Ver] to change Version
 ```
 
+
 # ALPHA VERSION
-###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal organization.  
+###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
+
+## 0.0.8
+```ruby
+- [Fix] Dropdown clickable link Area
+- [Transform] Dropdown in Title Bar to active with hover
+- [Improvement] Names from Dropdown Component
+- [Add] Hover in Arrows paginations
+- [Fix] Size from menuUser
+- [Add] Big Picture Size
+- [Fix] Hover color in GeneralMenu when Active
+
+```
 
 ## 0.0.7
 ```ruby

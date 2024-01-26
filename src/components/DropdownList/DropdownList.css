@@ -66,8 +66,8 @@
 }
 
 
-
-.dropdown-area.active{
+.dropdown-area.active,
+.menu-item:hover .dropdown-area{
   max-height:100vh;
   min-width:180px;
 }
@@ -84,10 +84,13 @@
   list-style:none;
 }
 .dp-menu-item{
-  padding:16px 20px;
   font:var(--Text-BodyMedium);
   transition:.15s ease;
 }
 .dp-menu-item:hover{
   background-color:var(--Background-Hover);
+}
+.dp-menu-link{
+  display:block;
+  padding:16px 20px;
 }
