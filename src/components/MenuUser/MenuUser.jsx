@@ -1,25 +1,35 @@
-import Button from '../Button/Button';
-
 import './MenuUser.css';
 import avatar from '../../assets/img/logao.jpg';
+import { useState } from 'react';
+import DropdownList from '../DropdownList/DropdownList';
+import ListItem from '../DropdownList/ListItem/ListItem';
+
+
 // Icons
 import { FaUserGroup, FaBell, FaEnvelopeCircleCheck, FaGear } from 'react-icons/fa6';
-import { useState } from 'react';
+import { IoMegaphone } from 'react-icons/io5';
 
 const MenuUser = () => {
 
-  const [open, setOpen] = useState(false);
+  const [openNotification, setOpenNotification] = useState(false);
+  const [openUserMenu, setOpenUserMenu] = useState(false);
   
   return(
     <section className="menuUser-area">
       {/* Friends */}
-      <Button type="button" nameClass="btn btn-dark" value={<FaUserGroup />} />
+      <article className="btn btn-dark">
+        <FaUserGroup />
+      </article>
+
+      <article className="btn btn-dark">
+        <IoMegaphone />
+      </article>
       {/* Notifications */}
-      <article className="notifications-area" onClick={() => {setOpen(!open);}}>
-        <Button type="button" nameClass="btn btn-dark" value={<FaBell />} />
+      <article className="notifications-area btn btn-dark" onClick={() => {setOpenNotification(!openNotification);}}>
+        <FaBell />
         <span className="notif-circle">1</span>
 
-        <section className={`dropdown-area ${open? 'active' : ''}`}>
+        <section className={`dropdown-area ${openNotification? 'active' : ''}`}>
           <div className="dropdown-area-inside">
             <article className="dropdown-header">
               <h3 className="title-h2">Notifications</h3>
@@ -46,8 +56,9 @@ const MenuUser = () => {
           </div>
         </section>
       </article>
+
       {/* Menu User */}
-      <section className="menuUser">
+      <section className="menuUser" onClick={() => {setOpenUserMenu(!openUserMenu);}}>
         {/* Avatar */}
         <img className="avatar" src={avatar} alt="Avatar User" />
         {/* User Name */}
@@ -56,6 +67,21 @@ const MenuUser = () => {
         <span className="balance-wallet">$5.25</span>
         {/* Arrow Down */}
         <span className="arrowdown arrow down"></span>
+
+        <section className={`dropdown-area userMenu ${openUserMenu? 'active' : ''}`}>
+          <div className="dropdown-area-inside">
+            <DropdownList>
+              <ListItem value="Account Details" />
+              <ListItem value="Wallet" />
+              <ListItem value="Settings" />
+              <ListItem value="Client Updates" />
+              <ListItem value="Go Offline" />
+              <ListItem value="Change Account" />
+              <ListItem value="Sign Out" />
+              <ListItem value="Exit" />
+            </DropdownList>
+          </div>
+        </section>
       </section>
     </section>
   );

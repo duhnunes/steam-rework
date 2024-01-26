@@ -1,26 +1,41 @@
 # TAGS
+```ruby
 - [Add] to new things
-- [Change] to change things
-- [Improvement] to Improve things
+- [Improvement] to Improve code
 - [Fix] to Fix things
-- [Transform] to Transform Pure HTML in Component'
+- [Transform] to Transform code in Component
 - [Delete] to Delete things
-
+- [Ver] to change Version
+```
 
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal organization.  
 
 ## 0.0.7
+```ruby
 - [Add] Dropdown Notifications
+- [Fix] MenuUser Buttons
+- [Add] Dropdown User
+- [Add] News Button
+- [Transform] Dropdown List in Component (DropdownList)
+- [Transform] Dropdown Item in Component (ListItem)
+- [Add] Dropdown Store
+- [Add] Dropdown Community
+- [Add] Dropdown User
+- [Add] Dropdown Library
 
+```
 
 ## 0.0.6
+```ruby
 - [Add] Games Streaming Now
 - [Delete] Duplicate Files
 - [Fix] Btn color text
 - [Add] Footer
+```
 
 ## 0.0.5.1
+```ruby
 - [Fix] Missing propTypes
 - [Fix] Names propTypes
 - [Fix] Positions from Recently Updated
@@ -28,8 +43,10 @@
 - [Fix] Color Hover from MenuPages
 - [Fix] All Button Hover
 - [Delete] Duplicate Files
+```
 
 ## 0.0.5
+```ruby
 - [Transform] Header Area Cards in Component (HeaderOffers)
 - [Transform] Card in Component (CardGames)
 - [Add] Browse Steam Category section cards
@@ -39,25 +56,33 @@
 - [Add] New and Trading section cards
 - [Add] Top Sellers section cards
 - [Add] Under $5 section cards
-
+```
 
 ## 0.0.4
+```ruby
 - [Add] Featured Area
-- [Change] to ALPHA Version
+- [Ver] to ALPHA Version
 - [Improvement] Component PrevNext Arrow
 - [Fix] Change.log not tracked by git
 - [Fix] Hover in generalMenu-link
 - [Change] Folder Structure
 - [Transform] H2 as Component
 - [Add] Special Offers Section
+``````
 
 ## 0.0.3
+```ruby
 - [Add] Header Image
 - [Add] change.log file
+```
 
 ## 0.0.2
+```ruby
 - [Add] Menu Pages
+```
 
 ## 0.0.1
+```ruby
 - [Add] Create Project and Configurations
 - [Add] GeneralMenu
+```
