@@ -1,9 +1,10 @@
 # TAGS
 ```ruby
-- [Add] to new things
+- [Add] to New things
 - [Improvement] to Improve code
 - [Fix] to Fix things
 - [Transform] to Transform code in Component
+
 - [Delete] to Delete things
 - [Ver] to change Version
 ```
@@ -12,10 +13,23 @@
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
+
+## 0.0.9
+```ruby
+- [Fix] Some small things
+- [Add] Community Page
+- [Change] Hover modal TitleBar to Click
+- [Add] Navbar component
+- [Improvement] Header component code
+- [Add] List component
+- [Add] Body component in Community page
+- [Fix] Some small things
+
+```
 ## 0.0.8
 ```ruby
 - [Fix] Dropdown clickable link Area
-- [Transform] Dropdown in Title Bar to active with hover
+- [Change] Dropdown in Title Bar to active with hover
 - [Improvement] Names from Dropdown Component
 - [Add] Hover in Arrows paginations
 - [Fix] Size from menuUser

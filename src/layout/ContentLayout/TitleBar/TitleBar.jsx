@@ -1,4 +1,3 @@
-
 import './TitleBar.css';
 import PrevNext from '../../../components/PrevNext/PrevNext';
 import Menu from '../../../components/Menu/Menu';
@@ -6,9 +5,12 @@ import MenuUser from '../../../components/MenuUser/MenuUser';
 import DropdownList from '../../../components/DropdownList/DropdownList';
 import DropdownListItem from '../../../components/DropdownList/DropdownListItem/DropdownListItem';
 
+
+
+// Icons
 import { VscClose, VscChromeRestore, VscChromeMinimize } from 'react-icons/vsc';
 
-function TitleBar() {
+export default function TitleBar() {
   
   return(
     <section className="titleBar">
@@ -81,4 +83,3 @@ function TitleBar() {
   );
 }
 
-export default TitleBar;

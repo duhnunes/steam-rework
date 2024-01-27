@@ -1,7 +1,7 @@
 # Steam Reworked
 
-Uma reimaginação das principais páginas do PC App da Steam!*
-A reimagining of the main Steam PC App pages!*
+Uma reimaginação das principais páginas do App da Steam!*
+A reimagining of the main Steam App pages!*
 
 *Pode conter diferenças do projeto original de Juxtopposed 
 *May contain differences from the original Juxtopposed project 
@@ -19,6 +19,7 @@ Libs:
 Vite@React  
 React-icons  
 React-router-dom  
+Eslint  
 
 # Disclaimer
 Esse é um projeto criado, apartir de um projeto aberto no figma de Juxtopposed, por um Desenvolvedor FrontEnd(DuH Nunes) sem nenhuma ligação com a Valve e/ou Steam.  

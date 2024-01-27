@@ -66,16 +66,13 @@
 }
 
 
-.dropdown-area.active,
-.menu-item:hover .dropdown-area{
+.dropdown-area.active{
   max-height:100vh;
-  min-width:180px;
 }
 
 .dropdown-area.userMenu{
   width:100%;
   min-width:180px;
-  translate:0 1%;
 }
 .dropdown-area.userMenu > .dropdown-area-inside{
   padding:0;

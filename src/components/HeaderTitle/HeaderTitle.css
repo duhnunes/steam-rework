@@ -1,0 +1,12 @@
+.title{
+  color:var(--Text-Main);
+  font:var(--Text-HeadingSmall);
+}
+.icon{
+  width:19px;
+  height:19px;
+  padding:0;
+}
+.__primary{
+  color:var(--ColorPrimary);
+}

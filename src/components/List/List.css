@@ -1,0 +1,26 @@
+.list-menu{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  column-gap:5px;
+}
+.list-item{
+  padding:7px 20px;
+  border-radius:3px;
+  color:var(--Text-Dim);
+  font:var(--Text-BodyLarge);
+  cursor:default;
+}
+.list-item.__btn{
+  cursor:pointer;
+}
+.list-item.__btn:hover{
+  background-color:var(--Background-Highlight);
+}
+.list-item.active{
+  background-color:var(--Background-Hover);
+  color:var(--Text-Main);
+}
+.list-item.__btn.active{
+  background-color:var(--Background-Hover);
+}

@@ -1,4 +1,4 @@
-import './IndexContent.css';
+import './Container.css';
 
 import Featured from '../ContentLayout/Featured/Featured';
 import SpecialOffers from '../ContentLayout/SectionCards/SpecialOffers/SpecialOffers';

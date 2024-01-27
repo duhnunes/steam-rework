@@ -1,0 +1,14 @@
+.navbar{
+  background-color:var(--Background-Main);
+  width:100%;
+  padding:10px;
+  display:flex;
+  align-items:center;
+  border-radius:5px;
+}
+
+/* COMMUNITY */
+.__nav-community{
+  justify-content:space-between;
+  translate:0 50%;
+}

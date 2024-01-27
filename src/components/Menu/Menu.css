@@ -9,13 +9,10 @@
   color:var(--Text-Main);
   text-transform:uppercase;
   text-decoration:inherit;
+  cursor:pointer;
 }
 .menu-item{
   position:relative;
-}
-.menu-link:focus,
-.menu-link:focus-visible{
-  color:var(--ColorPrimary);
 }
 .logo{
   background:url('../../assets/img/logo-steam.svg') no-repeat;

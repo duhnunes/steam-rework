@@ -96,3 +96,15 @@
   border-radius:inherit;
   transition:.15s ease-in;
 }
+
+
+/* COMMUNITY */
+.btn-bgMain{
+  background-color:var(--Background-Main);
+}
+.__btn-interaction{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  column-gap:5px;
+}

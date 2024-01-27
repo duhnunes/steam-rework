@@ -1,17 +1,15 @@
 import './Header.css';
 import propTypes from 'prop-types';
 
-const Header = ({src, alt}) => {
+const Header = ({children, css}) => {
   return(
-    <header className="header-img">
-      <img src={src} alt={alt} />
-    </header>
+    <header className={`header ${css}`}>{children}</header>
   );
 };
 
 export default Header;
 
 Header.propTypes = {
-  src: propTypes.string,
-  alt: propTypes.string
+  children: propTypes.string,
+  css: propTypes.string
 }.isRequired;
