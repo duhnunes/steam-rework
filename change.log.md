@@ -3,16 +3,28 @@
 - [Add] to New things
 - [Improvement] to Improve code
 - [Fix] to Fix things
-- [Transform] to Transform code in Component
+- [Transform] to Transform code in Component or Component in code
+- [Change] to change functionality
 
 - [Delete] to Delete things
-- [Ver] to change Version
+- [VER] to change Version
 ```
 
 
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
+
+## 0.0.9.1
+```ruby
+- [Improvement] Some code
+- [Transform] TitleBar base code for Navbar
+- [Transform] menuClose to List Component
+- [Change] Click modal to Hover
+- [Improvement] Dropdown menu position
+- [Transform] Menu titleBar from Component
+
+```
 
 ## 0.0.9
 ```ruby
@@ -26,6 +38,7 @@
 - [Fix] Some small things
 
 ```
+
 ## 0.0.8
 ```ruby
 - [Fix] Dropdown clickable link Area

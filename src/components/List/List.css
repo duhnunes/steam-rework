@@ -5,6 +5,7 @@
   column-gap:5px;
 }
 .list-item{
+  position:relative;
   padding:7px 20px;
   border-radius:3px;
   color:var(--Text-Dim);
@@ -23,4 +24,7 @@
 }
 .list-item.__btn.active{
   background-color:var(--Background-Hover);
+}
+.__closeMenu{
+  padding:0;
 }
