@@ -40,14 +40,9 @@
 /* .footer-menu-box{
 
 } */
-.footer-menu-list{
-  list-style:none;
-}
-.footer-menu-item{
-  margin:8px 0;
-}
 .footer-menu-link{
   font:var(--Text-BodyLarge);
+  transition:.15s;
 }
 .footer-menu-link:hover{
   color:var(--ColorPrimary);

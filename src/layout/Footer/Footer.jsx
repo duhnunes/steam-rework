@@ -4,6 +4,8 @@ import logoValve from '../../assets/img/logo-valve.svg';
 import logoSteam from '../../assets/img/logo-steam.svg';
 
 import { FaFacebookF, FaXTwitter } from 'react-icons/fa6';
+import { List, ListItem } from '../../components/List/List';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return(
@@ -32,65 +34,61 @@ export default function Footer() {
 
           </section>
 
-          <section className="footer-menu-box">
-            <ul className="footer-menu-list">
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+          <List css="__column">
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   About Valve
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Jobs
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Steamworks
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Steam Distribution
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Support
-                </a>
-              </li>
-            </ul>
-          </section>
+              </Link>
+            </ListItem>
+          </List>
 
-          <section className="footer-menu-box">
-            <ul className="footer-menu-list">
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+          <List css="__column">
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Privacy Policy
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Legal
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Steam Subscriber Agreement
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Refunds
-                </a>
-              </li>
-              <li className="footer-menu-item">
-                <a href="./#" className="footer-menu-link">
+              </Link>
+            </ListItem>
+            <ListItem css="__footer-item">
+              <Link to="./#" className="footer-menu-link">
                   Cookies
-                </a>
-              </li>
-            </ul>
-          </section>
+              </Link>
+            </ListItem>
+          </List>
           
         </article>
           

@@ -15,6 +15,17 @@
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
 
+## 0.0.9.2
+```ruby
+- [Transform] menu Helper in Component
+- [Transform] footer Links in Componenet
+- [Transform] generalMenu Links in Component
+- [Transform] shoppingMenu Links in Component
+- [Transform] SearchBar in Component
+
+
+```
+
 ## 0.0.9.1
 ```ruby
 - [Improvement] Some code

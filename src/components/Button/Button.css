@@ -108,3 +108,13 @@
   justify-content:space-between;
   column-gap:5px;
 }
+
+.__btn-shop{
+  color:var(--Text-Main);
+  background-color:rgba(118 128 140 / .10);
+  padding:9px 9.5px;
+  transition:background-color .2s;
+}
+.__btn-shop:hover{
+  background-color:rgba(118 128 140 / .3);
+}

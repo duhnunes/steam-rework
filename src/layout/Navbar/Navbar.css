@@ -1,14 +1,12 @@
 .navbar{
-  background-color:var(--Background-Main);
   width:100%;
-  padding:10px;
   display:flex;
   align-items:center;
-  border-radius:5px;
 }
 
 /* STORE */
 .__nav-TitleBar{
+  background-color:var(--Background-Main);
   height:59px;
   padding-left:22px;
   padding-right:22px;

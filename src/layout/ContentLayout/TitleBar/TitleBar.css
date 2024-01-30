@@ -2,40 +2,12 @@
   display:flex;
   align-items:center;
   column-gap:19px;
-
 }
-.closeMenu-area{
+.helperMenu-area{
   display:flex;
   align-items:center;
-  list-style:none;
-  column-gap:18px;
 }
 
-.closeMenu-area .menu-area{
-  width:100%;
-  column-gap:18px;
-}
-.closeMenu-area .menu-link{
-  text-transform:none;
-  color:var(--Text-Dim);
-}
-.closeMenu-area .menu-link > .arrow:last-child{
-  margin-left:10px;
-  border-color:var(--Text-Main);
-  border-width:0 2px 2px 0;
-  width:8px;
-  height:8px;
-}
-
-.closeMenu-item{
-  color:var(--Text-Dim);
-}
-.closeMenu-box{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  column-gap:18px;
-}
 .icon-minimize,
 .icon-maximize,
 .icon-close{

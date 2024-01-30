@@ -25,57 +25,51 @@ export default function TitleBar() {
       
       <MenuUser />
 
-      <article className="closeMenu-area">
-        <article className="closeMenu-item">
-          <List css="menu-area">
-            <ListItem css="__closeMenu">
-              <span className="menu-link">Help</span>
-              
-              <section className="dropdown-area userMenu">
-                <article className="dropdown-area-inside">
-                  <DropdownList>
-                    <DropdownListItem value="Steam Support" />
-                    <DropdownListItem value="Privacy Policy" />
-                    <DropdownListItem value="Legal Information" />
-                    <DropdownListItem value="Steam Subscriber Agreement" />
-                    <DropdownListItem value="System Information" />
-                    <DropdownListItem value="About Steam" />
-                  </DropdownList>
-                </article>
-              </section>
-            </ListItem>
-            <ListItem css="__closeMenu">
-              <span className="menu-link">
-                View
-                <span className="arrow down"></span>
-              </span>
-              
-              <section className="dropdown-area userMenu">
-                <div className="dropdown-area-inside">
-                  <DropdownList>
-                    <DropdownListItem value="Small Mode" />
-                    <DropdownListItem value="Players" />
-                    <DropdownListItem value="Game Servers" />
-                    <DropdownListItem value="Update News" />
-                  </DropdownList>
-                </div>
-              </section>
-            </ListItem>
-          </List>
-        </article>
+      <List css="">
+        <ListItem css="__pointer">Help
+          <section className="dropdown-area userMenu">
+            <article className="dropdown-area-inside">
+              <DropdownList>
+                <DropdownListItem value="Steam Support" />
+                <DropdownListItem value="Privacy Policy" />
+                <DropdownListItem value="Legal Information" />
+                <DropdownListItem value="Steam Subscriber Agreement" />
+                <DropdownListItem value="System Information" />
+                <DropdownListItem value="About Steam" />
+              </DropdownList>
+            </article>
+          </section>
+        </ListItem>
+        <ListItem css="__pointer">View
+          <section className="dropdown-area userMenu">
+            <div className="dropdown-area-inside">
+              <DropdownList>
+                <DropdownListItem value="Small Mode" />
+                <DropdownListItem value="Players" />
+                <DropdownListItem value="Update News" />
+              </DropdownList>
+            </div>
+          </section>
+        </ListItem>
 
-        <article className="closeMenu-box">
-          <span className="icon-minimize">
-            <VscChromeMinimize />
-          </span>
-          <span className="icon-maximize">
-            <VscChromeRestore />
-          </span>
-          <span className="icon-close">
-            <VscClose />
-          </span>
+        <article className="helperMenu-area">
+          <ListItem css="__helperMenu">
+            <span className="icon-minimize">
+              <VscChromeMinimize />
+            </span>
+          </ListItem>
+          <ListItem css="__helperMenu">
+            <span className="icon-maximize">
+              <VscChromeRestore />
+            </span>
+          </ListItem>
+          <ListItem css="__helperMenu">
+            <span className="icon-close">
+              <VscClose />
+            </span>
+          </ListItem>
         </article>
-      </article>
+      </List>
 
     </Navbar>
   );
