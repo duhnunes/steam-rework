@@ -15,6 +15,19 @@
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
 
+## 0.0.10.1
+```ruby
+- [Transform] Link in Component
+- [Improvement] code List Component
+- [Improvement] code Generalmenu
+- [Add] badge Live to Broadcasts section in Store page
+- [Transform] badge in Component
+- [Delete] unused class in Menu.css
+- [Transform] playButton in Component
+
+
+```
+
 ## 0.0.10
 ```ruby
 - [Fix] community Navbar background

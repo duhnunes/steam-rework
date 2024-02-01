@@ -14,45 +14,45 @@ export default function GeneralMenu () {
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="__generalLink active-menu"
-            >Home
+              className="__generalLink active-menu">
+                Home
             </Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="__generalLink"
-            >Browse</Link>
+              className="__generalLink">
+                Browse</Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="__generalLink"
-            >Discover</Link>
+              className="__generalLink">
+                Discover</Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="__generalLink"
-            >Points Shop</Link>
+              className="__generalLink">
+                Points Shop</Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="__generalLink"
-            >Curators</Link>
+              className="__generalLink">
+                Curators</Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="list-link __generalLink"
-            >Gift Cards</Link>
+              className="__generalLink">
+                Gift Cards</Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="list-link __generalLink"
-            >News</Link>
+              className="__generalLink">
+                News</Link>
           </ListItem>
         </List>
       </Navbar>
@@ -66,22 +66,22 @@ export default function GeneralMenu () {
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="__generalLink"
-            >Wishlist
+              className="__generalLink">
+                Wishlist
             </Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="__generalLink"
-            >Cart
+              className="__generalLink">
+                Cart
             </Link>
           </ListItem>
           <ListItem css="__generalItem">
             <Link
               to="./#"
-              className="btn __btn-shop __btn-interaction"
-            ><VscSettingsGear />
+              className="btn __btn-shop __btn-interaction">
+              <VscSettingsGear />
             </Link>
           </ListItem>
         </List>

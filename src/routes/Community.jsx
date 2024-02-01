@@ -1,5 +1,6 @@
 import GeneralMenu from '../layout/GeneralMenu/GeneralMenu';
 import './Community.css';
+import { Link } from 'react-router-dom';
 
 // Icons & Imagens
 import { TbWorld } from 'react-icons/tb';
@@ -13,7 +14,7 @@ import likeDislike from '../assets/img/community/like.png';
 import logoSteam from '../assets/img/community/logosteam.png';
 
 
-// Componenets & Libs
+// Componenets
 import Footer from '../layout/Footer/Footer';
 import Header from '../layout/ContentLayout/Header/Header';
 import Navbar from '../layout/Navbar/Navbar';
@@ -21,8 +22,9 @@ import {List, ListItem} from '../components/List/List';
 import Body from '../layout/Body/Body';
 import HeaderTitle from '../components/HeaderTitle/HeaderTitle';
 import SearchBar from '../components/SearchBar/SearchBar';
-import { Link } from 'react-router-dom';
 import Button from '../components/Button/Button';
+import Badge from '../components/Badge/Badge';
+import PlayButton from '../components/PlayButton/PlayButton';
 
 export default function Community(){
   
@@ -339,12 +341,11 @@ export default function Community(){
           </article>
 
           <article className="body-content-image">
-            <span className="badge __live">
-              <span className="circle"></span>LIVE</span>
+            <Badge css="__live">
+              <span className="circle"></span>LIVE
+            </Badge>
             <img src={gameImage2} alt="Elder Ring" />
-            <span className="card-player-btn">
-              <FaPlay />
-            </span>
+            <PlayButton />
           </article>
           
         </section>

@@ -32,18 +32,3 @@
   color:var(--Text-Dim);
   font:var(--Text-BodyMedium);
 }
-.badge{
-  background-color:var(--Background-Highlight);
-  border-radius:3px;
-  position:absolute;
-  padding:2px 8px;
-  top:10px;
-  left:10px;
-}
-.badge.__live{
-  color:var(--AccentRed);
-}
-
-.badge.__live .circle{
-  background-color:var(--AccentRed);
-}

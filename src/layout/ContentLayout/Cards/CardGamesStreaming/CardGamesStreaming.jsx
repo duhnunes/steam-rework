@@ -3,17 +3,19 @@ import propTypes from 'prop-types';
 
 // Icons
 import { VscEye } from 'react-icons/vsc';
-import { FaPlay } from 'react-icons/fa';
 import Button from '../../../../components/Button/Button';
+import Badge from '../../../../components/Badge/Badge';
+import PlayButton from '../../../../components/PlayButton/PlayButton';
 
 export default function CardGamesStreaming({cardImg, gameTitle, counter}) {
   return(
     <article className="card-body">
       <figure className="card-player">
+        <Badge css="__live">
+          <span className="circle"></span>LIVE
+        </Badge>
         <img src={cardImg} alt="Game Card Offer" className="card-img" />
-        <figcaption className="card-player-btn">
-          <FaPlay />
-        </figcaption>
+        <PlayButton />
       </figure>
             
       <h3 className="card-title">{gameTitle}</h3>
