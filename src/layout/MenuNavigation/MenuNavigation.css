@@ -1,4 +1,4 @@
-.generalMenu{
+.menuNavigation{
   width:100%;
   background:var(--Background-Tertiary);
   color:var(--Text-Main);
@@ -17,4 +17,13 @@
   align-items:center;
   justify-content:flex-end;
   flex:25%;
+}
+
+/* COMMUNITY */
+.__communityMenu{
+  justify-content:flex-start;
+  column-gap:400px;
+}
+.__communityMenu .navbar{
+  width:auto;
 }

@@ -1,7 +1,5 @@
 .search-box{
   position:relative;
-  width:100%;
-  flex:50%;
 }
 .search{
   background-color:var(--Background-Main20, rgba(14 20 27 / .2));
@@ -12,6 +10,7 @@
   border-radius:3px;
   padding:13px 39px 13px 19px;
 }
+
 .search-icon-box{
   position:absolute;
   top:0;

@@ -143,3 +143,15 @@ a{
   border-radius:50%;
   margin:0 5px 0 0;
 }
+
+.disabled{
+  color:var(--Text-Dim);
+  cursor:default;
+}
+.disabled:hover{
+  background-color:transparent;
+}
+.active{
+  background-color:var(--Background-Hover);
+  color:var(--Text-Main);
+}

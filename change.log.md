@@ -4,7 +4,7 @@
 - [Improvement] to Improve code
 - [Fix] to Fix things
 - [Transform] to Transform code in Component or Component in code
-- [Change] to change functionality
+- [Change] to change functionality or file names
 
 - [Delete] to Delete things
 - [VER] to change Version
@@ -15,6 +15,18 @@
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
 
+## 0.0.10.2
+```ruby
+- [Improvement] lists code
+- [Improvement] Add disabled CSS class for visual effect of finished pages
+- [Improvement] DropdownList code
+- [Delete] DropdownListItem file
+- [Change] GeneralMenu to MenuNavigation
+- [Fix] Search icon
+
+
+```
+
 ## 0.0.10.1
 ```ruby
 - [Transform] Link in Component
@@ -24,7 +36,6 @@
 - [Transform] badge in Component
 - [Delete] unused class in Menu.css
 - [Transform] playButton in Component
-
 
 ```
 

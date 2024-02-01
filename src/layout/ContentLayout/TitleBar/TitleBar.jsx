@@ -8,8 +8,7 @@ import { VscClose, VscChromeRestore, VscChromeMinimize } from 'react-icons/vsc';
 import PrevNext from '../../../components/PrevNext/PrevNext';
 import Menu from '../../../components/Menu/Menu';
 import MenuUser from '../../../components/MenuUser/MenuUser';
-import DropdownList from '../../../components/DropdownList/DropdownList';
-import DropdownListItem from '../../../components/DropdownList/DropdownListItem/DropdownListItem';
+import DropdownList, { DropdownListItem } from '../../../components/DropdownList/DropdownList';
 import Navbar from '../../Navbar/Navbar';
 import { List, ListItem } from '../../../components/List/List';
 
@@ -26,27 +25,27 @@ export default function TitleBar() {
       <MenuUser />
 
       <List css="">
-        <ListItem css="__pointer">Help
-          <section className="dropdown-area userMenu">
+        <ListItem css="__helper-item">Help
+          <section className="dropdown-area">
             <article className="dropdown-area-inside">
-              <DropdownList>
-                <DropdownListItem value="Steam Support" />
-                <DropdownListItem value="Privacy Policy" />
-                <DropdownListItem value="Legal Information" />
-                <DropdownListItem value="Steam Subscriber Agreement" />
-                <DropdownListItem value="System Information" />
-                <DropdownListItem value="About Steam" />
+              <DropdownList css="">
+                <DropdownListItem link="./#" css="disabled" value="Steam Support" />
+                <DropdownListItem link="./#" css="disabled" value="Privacy Policy" />
+                <DropdownListItem link="./#" css="disabled" value="Legal Information" />
+                <DropdownListItem link="./#" css="disabled" value="Steam Subscriber Agreement" />
+                <DropdownListItem link="./#" css="disabled" value="System Information" />
+                <DropdownListItem link="./#" css="disabled" value="About Steam" />
               </DropdownList>
             </article>
           </section>
         </ListItem>
-        <ListItem css="__pointer">View
-          <section className="dropdown-area userMenu">
+        <ListItem css="__helper-item">View
+          <section className="dropdown-area">
             <div className="dropdown-area-inside">
-              <DropdownList>
-                <DropdownListItem value="Small Mode" />
-                <DropdownListItem value="Players" />
-                <DropdownListItem value="Update News" />
+              <DropdownList css="">
+                <DropdownListItem link="./#" css="disabled" value="Small Mode" />
+                <DropdownListItem link="./#" css="disabled" value="Players" />
+                <DropdownListItem link="./#" css="disabled" value="Update News" />
               </DropdownList>
             </div>
           </section>

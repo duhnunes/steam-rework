@@ -1,10 +1,12 @@
-import GeneralMenu from '../layout/GeneralMenu/GeneralMenu';
 import './Community.css';
 import { Link } from 'react-router-dom';
+import MenuNavigation from '../layout/MenuNavigation/MenuNavigation';
+
 
 // Icons & Imagens
+import { VscSettingsGear } from 'react-icons/vsc';
 import { TbWorld } from 'react-icons/tb';
-import { FaStoreAlt, FaRegSmile, FaPlay } from 'react-icons/fa';
+import { FaStoreAlt, FaRegSmile } from 'react-icons/fa';
 import { IoMdThumbsUp, IoMdThumbsDown } from 'react-icons/io';
 import { BiSolidComment } from 'react-icons/bi';
 import avatar from '../assets/img/logao.jpg';
@@ -30,7 +32,51 @@ export default function Community(){
   
   return(
     <>
-      <GeneralMenu />
+      <MenuNavigation css="__communityMenu">
+        <Navbar css="">
+          <List css="">
+            <ListItem css="__generalItem">
+              <Link
+                to="./#"
+                className="__generalLink active-menu">
+                Home
+              </Link>
+            </ListItem>
+            <ListItem css="__generalItem">
+              <Link
+                to="./#"
+                className="__generalLink disabled">
+                Discussion
+              </Link>
+            </ListItem>
+            <ListItem css="__generalItem">
+              <Link
+                to="./#"
+                className="__generalLink disabled">
+                Workshop
+              </Link>
+            </ListItem>
+            <ListItem css="__generalItem">
+              <Link
+                to="./#"
+                className="__generalLink disabled">
+                Market
+              </Link>
+            </ListItem>
+            <ListItem css="__generalItem">
+              <Link
+                to="./#"
+                className="__generalLink disabled">
+                Broadcasts
+              </Link>
+            </ListItem>
+          </List>
+        </Navbar>
+
+        {/* Search section */}
+        <SearchBar inputCss="" id="searchGeneral" />
+
+      </MenuNavigation>
       <Header css="__community-height">
         <span className="community-header-img"></span>
         <section className="header-msg-area">

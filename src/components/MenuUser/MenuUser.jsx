@@ -1,8 +1,7 @@
 import './MenuUser.css';
 import avatar from '../../assets/img/logao.jpg';
 import { useState } from 'react';
-import DropdownList from '../DropdownList/DropdownList';
-import ListItem from '../DropdownList/DropdownListItem/DropdownListItem';
+import DropdownList, { DropdownListItem } from '../DropdownList/DropdownList';
 
 
 // Icons
@@ -72,14 +71,14 @@ const MenuUser = () => {
         <section className={`dropdown-area userMenu ${openUserMenu? 'active' : ''}`}>
           <div className="dropdown-area-inside">
             <DropdownList>
-              <ListItem value="Account Details" />
-              <ListItem value="Wallet" />
-              <ListItem value="Settings" />
-              <ListItem value="Client Updates" />
-              <ListItem value="Go Offline" />
-              <ListItem value="Change Account" />
-              <ListItem value="Sign Out" />
-              <ListItem value="Exit" />
+              <DropdownListItem value="Account Details" />
+              <DropdownListItem value="Wallet" />
+              <DropdownListItem value="Settings" />
+              <DropdownListItem value="Client Updates" />
+              <DropdownListItem value="Go Offline" />
+              <DropdownListItem value="Change Account" />
+              <DropdownListItem value="Sign Out" />
+              <DropdownListItem value="Exit" />
             </DropdownList>
           </div>
         </section>

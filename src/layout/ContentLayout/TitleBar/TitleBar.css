@@ -3,6 +3,10 @@
   align-items:center;
   column-gap:19px;
 }
+.menu-general .active{
+  color:var(--ColorPrimary);
+  background-color:transparent;
+}
 .helperMenu-area{
   display:flex;
   align-items:center;

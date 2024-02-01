@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 //Imports Componentes
-import DropdownList from '../DropdownList/DropdownList';
-import DropdownListItem from '../DropdownList/DropdownListItem/DropdownListItem';
+import DropdownList, { DropdownListItem } from '../DropdownList/DropdownList';
 import { List, ListItem } from '../List/List';
 
 function Menu () {
@@ -12,44 +11,44 @@ function Menu () {
   return(
     <>
       <List css="">
-        <ListItem css="menu-item">
+        <ListItem css="">
           <i className="logo"></i>
         </ListItem>
         <ListItem css="">
           <Link
             to="./"
-            className="list-link">
+            className="list-link active">
               Store
           </Link>
           <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
-              <DropdownList>
-                <DropdownListItem link="#" value="Browse" />
-                <DropdownListItem link="#" value="Discovery Queue" />
-                <DropdownListItem link="#" value="Wishlist" />
-                <DropdownListItem link="#" value="Points Shop" />
-                <DropdownListItem link="#" value="Gift Cards" />
-                <DropdownListItem link="#" value="News" />
-                <DropdownListItem link="#" value="Stats" />
+              <DropdownList css="">
+                <DropdownListItem link="#" css="disabled" value="Browse" />
+                <DropdownListItem link="#" css="disabled" value="Discovery Queue" />
+                <DropdownListItem link="#" css="disabled" value="Wishlist" />
+                <DropdownListItem link="#" css="disabled" value="Points Shop" />
+                <DropdownListItem link="#" css="disabled" value="Gift Cards" />
+                <DropdownListItem link="#" css="disabled" value="News" />
+                <DropdownListItem link="#" css="disabled" value="Stats" />
               </DropdownList>
             </div>
           </section>
         </ListItem>
         <ListItem css="">
           <Link
-            className="list-link"
-            to="./">
+            className="list-link disabled"
+            to="./#">
               library
           </Link>
           <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
-              <DropdownList>
-                <DropdownListItem link="#" value="Collections" />
-                <DropdownListItem link="#" value="Hidden Games" />
-                <DropdownListItem link="#" value="Soundtracks" />
-                <DropdownListItem link="#" value="Game Servers" />
-                <DropdownListItem link="#" value="Activate a Product" />
-                <DropdownListItem link="#" value="Add a non-Steam Game" />
+              <DropdownList css="">
+                <DropdownListItem link="#" css="disabled" value="Collections" />
+                <DropdownListItem link="#" css="disabled" value="Hidden Games" />
+                <DropdownListItem link="#" css="disabled" value="Soundtracks" />
+                <DropdownListItem link="#" css="disabled" value="Game Servers" />
+                <DropdownListItem link="#" css="disabled" value="Activate a Product" />
+                <DropdownListItem link="#" css="disabled" value="Add a non-Steam Game" />
               </DropdownList>
             </div>
           </section>
@@ -62,36 +61,36 @@ function Menu () {
           </Link>
           <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
-              <DropdownList>
-                <DropdownListItem link="#" value="Discussions" />
-                <DropdownListItem link="#" value="Market" />
-                <DropdownListItem link="#" value="Workshop" />
-                <DropdownListItem link="#" value="Broadcasts" />
+              <DropdownList css="">
+                <DropdownListItem link="#" css="disabled" value="Discussions" />
+                <DropdownListItem link="#" css="disabled" value="Market" />
+                <DropdownListItem link="#" css="disabled" value="Workshop" />
+                <DropdownListItem link="#" css="disabled" value="Broadcasts" />
               </DropdownList>
             </div>
           </section>
         </ListItem>
         <ListItem css="">
           <Link
-            className="list-link"
+            className="list-link disabled"
             to="./#">
               DuH Nunes
           </Link>
           <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
-              <DropdownList>
-                <DropdownListItem link="#" value="Activity" />
-                <DropdownListItem link="#" value="Friends & Groups" />
-                <DropdownListItem link="#" value="Content" />
-                <DropdownListItem link="#" value="Inventory" />
-                <DropdownListItem link="#" value="Badges" />
-                <DropdownListItem link="#" value="Year In Review" />
+              <DropdownList css="">
+                <DropdownListItem link="#" css="disabled" value="Activity" />
+                <DropdownListItem link="#" css="disabled" value="Friends & Groups" />
+                <DropdownListItem link="#" css="disabled" value="Content" />
+                <DropdownListItem link="#" css="disabled" value="Inventory" />
+                <DropdownListItem link="#" css="disabled" value="Badges" />
+                <DropdownListItem link="#" css="disabled" value="Year In Review" />
               </DropdownList>
             </div>
           </section>
         </ListItem>
         <ListItem css="">
-          <Link to="./#" className="list-link">Downloads</Link>
+          <Link to="./#" className="list-link disabled">Downloads</Link>
         </ListItem>
       </List>
     </>
