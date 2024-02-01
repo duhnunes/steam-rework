@@ -19,6 +19,8 @@
 
 /* COMMUNITY */
 .__nav-community{
+  background-color:var(--Background-Main);
   justify-content:space-between;
   translate:0 50%;
+  padding:10px;
 }

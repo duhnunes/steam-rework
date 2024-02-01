@@ -28,3 +28,8 @@
   display:flex;
   align-items:center;
 }
+
+.__header{
+  background-color:var(--Background-Main);
+  border:1px solid var(--Background-Hover);
+}

@@ -6,17 +6,34 @@
 }
 .list-item{
   position:relative;
-  padding:7px 20px;
   border-radius:3px;
   color:var(--Text-Dim);
   font:var(--Text-BodyLarge);
-  cursor:pointer;
+  cursor:default;
 }
-.__btn{
+.list-link{
+  padding:7px 20px;
+  color:var(--Text-Main);
+  text-transform:uppercase;
+  text-decoration:inherit;
   cursor:pointer;
+  transition:.15s ease;
 }
-.__btn:hover{
+.__nav-community-link,
+.__nav-community-p{
+  text-transform:capitalize;
+  color:var(--Text-Dim);
+  border-radius:3px;
+}
+.__nav-community-link:hover{
   background-color:var(--Background-Highlight);
+  color:var(--Text-Main);
+}
+.__nav-community-link.active:hover{
+  background-color:var(--Background-Hover);
+}
+.__nav-community-p{
+  cursor:default;
 }
 .active{
   background-color:var(--Background-Hover);

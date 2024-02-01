@@ -5,15 +5,7 @@
   width:734px;
   list-style:none;
 }
-.menu-link{
-  color:var(--Text-Main);
-  text-transform:uppercase;
-  text-decoration:inherit;
-  cursor:pointer;
-}
-.menu-item{
-  position:relative;
-}
+
 .logo{
   background:url('../../assets/img/logo-steam.svg') no-repeat;
   background-size:cover;

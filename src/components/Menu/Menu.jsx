@@ -18,7 +18,7 @@ function Menu () {
         <ListItem css="">
           <Link
             to="./"
-            className="menu-link">
+            className="list-link">
               Store
           </Link>
           <section className="dropdown-area userMenu">
@@ -37,7 +37,7 @@ function Menu () {
         </ListItem>
         <ListItem css="">
           <Link
-            className="menu-link"
+            className="list-link"
             to="./">
               library
           </Link>
@@ -57,7 +57,7 @@ function Menu () {
         <ListItem css="">
           <Link
             to="/community"
-            className="menu-link">
+            className="list-link">
               Community
           </Link>
           <section className="dropdown-area userMenu">
@@ -73,7 +73,7 @@ function Menu () {
         </ListItem>
         <ListItem css="">
           <Link
-            className="menu-link"
+            className="list-link"
             to="./#">
               DuH Nunes
           </Link>
@@ -91,7 +91,7 @@ function Menu () {
           </section>
         </ListItem>
         <ListItem css="">
-          <Link to="./#" className="menu-link">Downloads</Link>
+          <Link to="./#" className="list-link">Downloads</Link>
         </ListItem>
       </List>
     </>

@@ -1,0 +1,49 @@
+.__avaliation{
+  flex-direction:row;
+  align-items:flex-start;
+  justify-content:space-between;
+  padding:5px;
+  width:100%;
+}
+
+.avaliation-info{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  width:100%;
+  align-self:center;
+}
+.aval-vote{
+  font:var(--Text-BodyMedium);
+  color:var(--Text-Main);
+}
+.aval-hoursCounter{
+  font:var(--Text-BodyMedium);
+  color:var(--Text-Dim);
+}
+
+.aval-content{
+  margin-top:20px;
+  width:100%;
+}
+
+.review-counter{
+  color:var(--Text-Dim);
+  font:var(--Text-BodyMedium);
+}
+.badge{
+  background-color:var(--Background-Highlight);
+  border-radius:3px;
+  position:absolute;
+  padding:2px 8px;
+  top:10px;
+  left:10px;
+}
+.badge.__live{
+  color:var(--AccentRed);
+}
+
+.badge.__live .circle{
+  background-color:var(--AccentRed);
+}

@@ -58,7 +58,7 @@ export default function GeneralMenu () {
       </Navbar>
 
       {/* Search section */}
-      <SearchBar />
+      <SearchBar inputCss="" id="searchGeneral" />
 
       {/*  Shopping Menu and Setings */}
       <Navbar css="shopSettings-area">

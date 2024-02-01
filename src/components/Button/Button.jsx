@@ -1,10 +1,10 @@
 import propTypes from 'prop-types';
 import './Button.css';
 
-const Button = ({type, nameClass, value})=> {
+const Button = ({type, css, children})=> {
   return(
     <>
-      <button type={type} className={nameClass}>{value}</button>
+      <button type={type} className={css}>{children}</button>
     </>
   );
 };
@@ -13,6 +13,6 @@ export default Button;
 
 Button.propTypes = {
   type: propTypes.string,
-  nameClass: propTypes.string,
-  value: propTypes.element
+  css: propTypes.string,
+  children: propTypes.element
 }.isRequired;

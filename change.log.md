@@ -15,6 +15,19 @@
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
 
+## 0.0.10
+```ruby
+- [Fix] community Navbar background
+- [Add] SearchBar in community Header
+- [Add] second style Card from Community
+- [Improvement] List component code
+- [Fix] Navbar community page
+- [Imporvement] Card code from Community
+- [Fix] titleBar Helper Links
+- [Add] third style Card from Community
+
+```
+
 ## 0.0.9.2
 ```ruby
 - [Transform] menu Helper in Component
@@ -22,7 +35,6 @@
 - [Transform] generalMenu Links in Component
 - [Transform] shoppingMenu Links in Component
 - [Transform] SearchBar in Component
-
 
 ```
 
