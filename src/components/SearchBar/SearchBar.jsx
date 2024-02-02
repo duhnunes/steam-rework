@@ -1,23 +1,21 @@
 import './SearchBar.css';
 import propTypes from 'prop-types';
 
-import { VscSearch } from 'react-icons/vsc';
 
-
-export default function SearchBar({inputCss, id}) {
-  return(
-    <article className="search-box">
-      <input type="text" name="search" id={id} className={`search ${inputCss}`} placeholder="Search..." />
-      <span className="search-icon-box" id="searchIcon">
-        <i className="search-icon">
-          <VscSearch />
-        </i>
-      </span>
-    </article>
-  );
+export default function SearchBar({css, children}) {
+  return <section className={`search-box ${css}`}>{children}</section>;
+}
+export function Input({name, id, css, text}){
+  return <input type="text" name={name} id={id} className={`search ${css}`} placeholder={text} />;
 }
 
 SearchBar.propTypes = {
-  inputCss: propTypes.string,
-  id: propTypes.string
+  children: propTypes.string
+}.isRequired;
+
+Input.propTypes = {
+  name: propTypes.string,
+  id: propTypes.string,
+  css: propTypes.string,
+  text: propTypes.string
 }.isRequired;

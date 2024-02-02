@@ -1,0 +1,116 @@
+.__nav-section-browse{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  row-gap:30px;
+  translate:0 -150px;
+}
+.nav-view{
+  display:flex;
+  align-items:center;
+  column-gap:15px;
+}
+.nav-view p{
+  color:var(--Text-Dim);
+  cursor:default;
+}
+.nav-view button{
+  width:20px;
+  height:20px;
+  padding:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--Text-Dim);
+  font:var(--Text-BodyMedium);
+}
+.nav-view button:last-child{
+  font:var(--Text-HeadingLarge);
+  translate:0 5%;
+}
+.browse-grid{
+  display:grid;
+  grid-template-columns:299px 1fr;
+  column-gap:10px;
+  width:100%;
+  translate:0 -150px;
+}
+.browse-grid .filters-area{
+  padding:15px;
+  border-radius:5px;
+  background-color:var(--Background-Main);
+}
+.select-filter-area{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.browse-grid .title{
+  font:var(--Text-BodyMedium);
+}
+
+.tags-area{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+}
+.tags{
+  background-color:var(--Background-Highlight);
+  border-radius:3px;
+  padding:4px 6px;
+  display:inline-flex;
+  align-items:center;
+  column-gap:10px;
+}
+.tags .btn-x{
+  translate:0 10%;
+}
+
+.catalog-filter{
+  border-top:1px solid var(--Text-Dim);
+  margin:15px 0;
+}
+.catalog-filter-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding-top:10px;
+}
+.catalog-filter-body{
+  margin:10px 0 15px;
+  max-height:0;
+  overflow:hidden;
+}
+.catalog-filter-body.active{
+  max-height:100vh;
+  background-color:transparent;
+}
+
+.browse-grid .cards-area{
+  max-height:1280px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  justify-content:space-between;
+}
+.cards-area .cards-games-area{
+  width:100%;
+  display:grid;
+  grid-template-rows:repeat(auto-fill, minmax(100px, 166px));
+  grid-gap:10px;
+}
+.cards-games-area .card{
+  background-color:var(--Background-Main);
+  border-radius:5px;
+  padding:15px;
+}
+
+.card{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.card img{
+  width:292px;
+  height:137px;
+}

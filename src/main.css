@@ -12,3 +12,12 @@
 .__community-recoil{
   padding:0 178px;
 }
+
+/* STORE BROWSE */
+.__browse-recoil-header{
+  padding:0 150px;
+}
+.__main-browse{
+  padding:0 170px;
+  row-gap:20px;
+}

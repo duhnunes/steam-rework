@@ -3,8 +3,11 @@
   border-radius:3px;
   cursor:pointer;
   position:relative;
-  color:var(--Text-Main);
+  color:var(--Text-Dim);
   transition:all .15s ease-in-out;
+}
+.btn:hover{
+  filter:brightness(1.4);
 }
 .btn-dark{
   background-color:var(--Background-Highlight);
@@ -99,9 +102,6 @@
 
 
 /* COMMUNITY */
-.btn-bgMain{
-  background-color:var(--Background-Main);
-}
 .__btn-interaction{
   display:flex;
   align-items:center;
@@ -117,4 +117,9 @@
 }
 .__btn-shop:hover{
   background-color:rgba(118 128 140 / .3);
+}
+
+/* BROWSE */
+.btn-x{
+  padding:0;
 }

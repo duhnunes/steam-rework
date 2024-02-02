@@ -4,6 +4,13 @@
   align-items:center;
 }
 
+.bgMain{
+  background-color:var(--Background-Main);
+}
+.bgHighlight{
+  background-color:var(--Background-Highlight);
+}
+
 /* COMMUNITY */
 .community-body{
   display:grid;
@@ -82,3 +89,6 @@
   color:var(--ColorPrimary);
   font:var(--Text-BodySmall);
 }
+
+
+/* STORE BROWSE */

@@ -23,4 +23,15 @@
   justify-content:space-between;
   translate:0 50%;
   padding:10px;
+  border-radius:5px;
+}
+
+/* STORE BROWSE */
+.__browse{
+  background-color:var(--Background-Main);
+  display:grid;
+  grid-template-columns:300px 1fr;
+  justify-content:space-between;
+  padding:10px;
+  border-radius:5px;
 }

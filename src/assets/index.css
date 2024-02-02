@@ -111,6 +111,10 @@ button{
 a{
   text-decoration:inherit;
   color:var(--Text-Main);
+  transition:.15s ease;
+}
+a:hover{
+  color:var(--ColorPrimary);
 }
 
 ::-webkit-scrollbar{
@@ -145,8 +149,8 @@ a{
 }
 
 .disabled{
-  color:var(--Text-Dim);
-  cursor:default;
+  color:var(--Text-Dim)!important;
+  cursor:default!important;
 }
 .disabled:hover{
   background-color:transparent;

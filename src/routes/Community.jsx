@@ -4,7 +4,7 @@ import MenuNavigation from '../layout/MenuNavigation/MenuNavigation';
 
 
 // Icons & Imagens
-import { VscSettingsGear } from 'react-icons/vsc';
+import { VscSearch } from 'react-icons/vsc';
 import { TbWorld } from 'react-icons/tb';
 import { FaStoreAlt, FaRegSmile } from 'react-icons/fa';
 import { IoMdThumbsUp, IoMdThumbsDown } from 'react-icons/io';
@@ -23,7 +23,7 @@ import Navbar from '../layout/Navbar/Navbar';
 import {List, ListItem} from '../components/List/List';
 import Body from '../layout/Body/Body';
 import HeaderTitle from '../components/HeaderTitle/HeaderTitle';
-import SearchBar from '../components/SearchBar/SearchBar';
+import SearchBar, { Input } from '../components/SearchBar/SearchBar';
 import Button from '../components/Button/Button';
 import Badge from '../components/Badge/Badge';
 import PlayButton from '../components/PlayButton/PlayButton';
@@ -38,7 +38,7 @@ export default function Community(){
             <ListItem css="__generalItem">
               <Link
                 to="./#"
-                className="__generalLink active-menu">
+                className="__generalLink active">
                 Home
               </Link>
             </ListItem>
@@ -74,7 +74,14 @@ export default function Community(){
         </Navbar>
 
         {/* Search section */}
-        <SearchBar inputCss="" id="searchGeneral" />
+        <SearchBar css="">
+          <Input name="search" id="searchGeneral" css="" text="Search..." />
+          <span className="search-icon-box" id="searchIcon">
+            <i className="search-icon">
+              <VscSearch />
+            </i>
+          </span>
+        </SearchBar>
 
       </MenuNavigation>
       <Header css="__community-height">
@@ -83,7 +90,14 @@ export default function Community(){
           <article className="title">
             <p>Welcome to Steam Community. Search for a game to get started.</p>
           </article>
-          <SearchBar inputCss="__header" id="searchCommunity" />
+          <SearchBar css="">
+            <Input name="search" id="searchCommunity" css="__header" text="Search..." />
+            <span className="search-icon-box" id="searchIcon">
+              <i className="search-icon">
+                <VscSearch />
+              </i>
+            </span>
+          </SearchBar>
         </section>
 
         <section className="container __community-recoil">
@@ -194,11 +208,11 @@ export default function Community(){
               me when uuuuh space
             </p>
             <div className="body-content-interaction">
-              <Button type="button" css="btn btn-bgMain __btn-interaction">
+              <Button type="button" css="btn bgMain __btn-interaction">
                 <IoMdThumbsUp />
                 <span className="interaction-counter">5</span>
               </Button>
-              <Button type="button" css="btn btn-bgMain __btn-interation">
+              <Button type="button" css="btn bgMain __btn-interation">
                 <BiSolidComment />
                 <span className="interaction-counter">2</span>
               </Button>
@@ -254,28 +268,28 @@ export default function Community(){
             <p className="subtitle">Was this review helpful?</p>
             <section className="body-content-caption-grid">
               <section className="body-content-interaction">
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>Yes</span>
                   <IoMdThumbsUp />
                   <span className="interaction-counter">5</span>
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>No</span>
                   <IoMdThumbsDown />
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>Funny</span>
                   <FaRegSmile />
-                  <span className="btn btn-bgMain __btn-interaction">6</span>
+                  <span className="btn bgMain __btn-interaction">6</span>
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>Award</span>
                   <FaRegSmile />
-                  <span className="btn btn-bgMain __btn-interaction">5</span>
+                  <span className="btn bgMain __btn-interaction">5</span>
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <BiSolidComment />
-                  <span className="btn btn-bgMain __btn-interaction">2</span>
+                  <span className="btn bgMain __btn-interaction">2</span>
                 </Button>
 
               </section>
@@ -331,28 +345,28 @@ export default function Community(){
             <p className="subtitle">Was this review helpful?</p>
             <section className="body-content-caption-grid">
               <section className="body-content-interaction">
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>Yes</span>
                   <IoMdThumbsUp />
                   <span className="interaction-counter">5</span>
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>No</span>
                   <IoMdThumbsDown />
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>Funny</span>
                   <FaRegSmile />
-                  <span className="btn btn-bgMain __btn-interaction">6</span>
+                  <span className="btn bgMain __btn-interaction">6</span>
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <span>Award</span>
                   <FaRegSmile />
-                  <span className="btn btn-bgMain __btn-interaction">5</span>
+                  <span className="btn bgMain __btn-interaction">5</span>
                 </Button>
-                <Button type="button" css="btn btn-bgMain __btn-interaction">
+                <Button type="button" css="btn bgMain __btn-interaction">
                   <BiSolidComment />
-                  <span className="btn btn-bgMain __btn-interaction">2</span>
+                  <span className="btn bgMain __btn-interaction">2</span>
                 </Button>
 
               </section>

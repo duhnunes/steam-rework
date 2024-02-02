@@ -1,4 +1,4 @@
-import './Container.css';
+import '../../main.css';
 
 import Featured from '../ContentLayout/Featured/Featured';
 import SpecialOffers from '../ContentLayout/SectionCards/SpecialOffers/SpecialOffers';
@@ -10,7 +10,7 @@ import TopSeller from '../ContentLayout/SectionCards/TopSeller/TopSeller';
 import Under5 from '../ContentLayout/SectionCards/Under5/Under5';
 import GamesStreaming from '../ContentLayout/SectionCards/GamesStreaming/GamesStreaming';
 
-export default function IndexContent() {
+export default function StoreContent() {
   return(
     <main className="container">
       <Featured />

@@ -53,5 +53,7 @@
 .down{
   rotate:45deg;
 }
-
+.up{
+  rotate:-135deg;
+}
 

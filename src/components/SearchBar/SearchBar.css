@@ -10,6 +10,11 @@
   border-radius:3px;
   padding:13px 39px 13px 19px;
 }
+.search:focus,
+.search:focus-visible,
+.search:focus-within{
+  outline:2px solid var(--ColorSecondary);
+}
 
 .search-icon-box{
   position:absolute;
@@ -27,8 +32,26 @@
   display:flex;
   align-items:center;
 }
+.search::placeholder{
+  font:var(--Text-BodyMedium);
+}
 
 .__header{
   background-color:var(--Background-Main);
   border:1px solid var(--Background-Hover);
+}
+
+/* STORE BROWSE */
+.__filter{
+  width:100%;
+  margin:10px 0;
+  background-color:var(--ColorSecondary20, rgba(75 97 155 / .2));
+}
+.__filter::placeholder,
+.__browse-filter-icon{
+  color:var(--ColorSecondary);
+  transition:.15s ease;
+}
+.__browse-filter-icon:hover{
+  filter:brightness(1.4);
 }

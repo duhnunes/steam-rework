@@ -2,3 +2,8 @@
   text-transform:uppercase;
   font:var(--Text-HeadingSmall);
 }
+
+/* STORE BROWSE */
+.__browse-h2{
+  align-self:flex-start;
+}

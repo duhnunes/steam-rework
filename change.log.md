@@ -4,8 +4,9 @@
 - [Improvement] to Improve code
 - [Fix] to Fix things
 - [Transform] to Transform code in Component or Component in code
-- [Change] to change functionality or file names
 
+
+- [Change] to change functionality or file names
 - [Delete] to Delete things
 - [VER] to change Version
 ```
@@ -15,6 +16,16 @@
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
 
+## 0.0.11
+```ruby
+- [Add] Browse page
+- [Improvement] minor Adjustments
+- [Improvement] some code from Buttons
+- [Improvement] Search component
+- [Change] StoreContent.css to Main.css
+
+```
+
 ## 0.0.10.2
 ```ruby
 - [Improvement] lists code
@@ -23,7 +34,6 @@
 - [Delete] DropdownListItem file
 - [Change] GeneralMenu to MenuNavigation
 - [Fix] Search icon
-
 
 ```
 

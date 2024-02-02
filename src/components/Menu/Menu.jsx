@@ -2,7 +2,7 @@ import './Menu.css';
 import { Link } from 'react-router-dom';
 
 
-//Imports Componentes
+// Componentes
 import DropdownList, { DropdownListItem } from '../DropdownList/DropdownList';
 import { List, ListItem } from '../List/List';
 
@@ -17,13 +17,13 @@ function Menu () {
         <ListItem css="">
           <Link
             to="./"
-            className="list-link active">
+            className="list-link __link-title-bar">
               Store
           </Link>
           <section className="dropdown-area userMenu">
             <div className="dropdown-area-inside">
               <DropdownList css="">
-                <DropdownListItem link="#" css="disabled" value="Browse" />
+                <DropdownListItem link="./browse" css="" value="Browse" />
                 <DropdownListItem link="#" css="disabled" value="Discovery Queue" />
                 <DropdownListItem link="#" css="disabled" value="Wishlist" />
                 <DropdownListItem link="#" css="disabled" value="Points Shop" />
@@ -36,7 +36,7 @@ function Menu () {
         </ListItem>
         <ListItem css="">
           <Link
-            className="list-link disabled"
+            className="list-link __link-title-bar disabled"
             to="./#">
               library
           </Link>
@@ -56,7 +56,7 @@ function Menu () {
         <ListItem css="">
           <Link
             to="/community"
-            className="list-link">
+            className="list-link __link-title-bar">
               Community
           </Link>
           <section className="dropdown-area userMenu">
@@ -72,7 +72,7 @@ function Menu () {
         </ListItem>
         <ListItem css="">
           <Link
-            className="list-link disabled"
+            className="list-link __link-title-bar disabled"
             to="./#">
               DuH Nunes
           </Link>
@@ -90,7 +90,7 @@ function Menu () {
           </section>
         </ListItem>
         <ListItem css="">
-          <Link to="./#" className="list-link disabled">Downloads</Link>
+          <Link to="./#" className="list-link __link-title-bar disabled">Downloads</Link>
         </ListItem>
       </List>
     </>

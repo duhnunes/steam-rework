@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 import { List, ListItem } from '../components/List/List';
 import Navbar from '../layout/Navbar/Navbar';
-import SearchBar from '../components/SearchBar/SearchBar';
+import SearchBar, { Input } from '../components/SearchBar/SearchBar';
 
 // Icons & Images
-import { VscSettingsGear } from 'react-icons/vsc';
+import { VscSearch, VscSettingsGear } from 'react-icons/vsc';
 import headerImg from '../assets/img/header/header-steam-summer-sale.gif';
 import MenuNavigation from '../layout/MenuNavigation/MenuNavigation';
 
-
+// Componenets
 import Header from '../layout/ContentLayout/Header/Header';
-import IndexContent from '../layout/Container/Container';
 import Footer from '../layout/Footer/Footer';
+import StoreContent from '../layout/StoreContent/StoreContent';
 
 
 export default function Store() {
@@ -29,8 +29,8 @@ export default function Store() {
             </ListItem>
             <ListItem css="__generalItem">
               <Link
-                to="./#"
-                className="__generalLink disabled">
+                to="./browse"
+                className="__generalLink">
                 Browse</Link>
             </ListItem>
             <ListItem css="__generalItem">
@@ -67,7 +67,14 @@ export default function Store() {
         </Navbar>
 
         {/* Search section */}
-        <SearchBar inputCss="" id="searchGeneral" />
+        <SearchBar css="">
+          <Input name="search" id="search" css="" text="Search..." />
+          <span className="search-icon-box" id="searchIcon">
+            <i className="search-icon">
+              <VscSearch />
+            </i>
+          </span>
+        </SearchBar>
 
         {/*  Shopping Menu and Setings */}
         <Navbar css="shopSettings-area">
@@ -99,7 +106,7 @@ export default function Store() {
       <Header>
         <img src={headerImg} alt="Summer Sale" />
       </Header>
-      <IndexContent />
+      <StoreContent />
       <Footer />
     </>
   );

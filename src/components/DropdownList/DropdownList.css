@@ -87,4 +87,5 @@
   display:block;
   text-transform:capitalize;
   padding:16px 20px;
+  color:var(--Text-Main);
 }

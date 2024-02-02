@@ -7,6 +7,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Store from './routes/Store';
 import Community from './routes/Community';
 import ErrorPage from './routes/ErrorPage';
+import Browse from './routes/Browse';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Store />,
+      },
+      {
+        path:'/browse',
+        element: <Browse />,
       },
       {
         path: 'community',
