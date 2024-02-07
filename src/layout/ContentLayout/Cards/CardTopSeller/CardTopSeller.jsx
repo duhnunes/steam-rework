@@ -4,6 +4,7 @@ import propTypes from 'prop-types';
 // Icons
 import logoWin from '../../../../assets/img/Windows8.svg';
 import wishlist from '../../../../assets/img/Favorite border.svg';
+import Button from '../../../../components/Button/Button';
 
 export default function CardTopSeller({cardImg, gameTitle, price}) {
   return(
@@ -19,9 +20,14 @@ export default function CardTopSeller({cardImg, gameTitle, price}) {
           <section className="card-info-price">
             <span className="__newtrading-price">{price}</span>
 
-            <span className="btn btn-dark card-info__wishlist">
-              <img src={wishlist} alt="Wishlist this Game" />
-            </span>
+            <Button
+              css="btn btn-dark"
+              id="addwishlist">
+              <img
+                src={wishlist}
+                alt="Wishlist this Game" />
+            </Button>
+            
           </section>
         </article>
 

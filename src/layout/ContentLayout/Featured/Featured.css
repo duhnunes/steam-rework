@@ -21,6 +21,10 @@
   border-radius:5px;
   width:100%;
 }
+.featured-inside-area:hover{
+  color:var(--Text-Main);
+}
+
 .featured-big-image{
   flex:60%;
   height:458px;
@@ -55,6 +59,15 @@
   grid-template-columns:1fr 1fr;
   grid-template-rows:1fr 1fr;
   gap:7px;
+}
+.featured-game-imgs img{
+  background-color:var(--BackgroundMain20, rgba(14 20 27 / .8));
+  border-radius:3px;
+  filter:brightness(.6);
+  transition:filter .35s ease;
+}
+.featured-game-imgs img:hover{
+  filter:brightness(1);
 }
 .featured-category-area{
   display:flex;

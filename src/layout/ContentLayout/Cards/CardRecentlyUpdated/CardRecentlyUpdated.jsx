@@ -1,3 +1,4 @@
+import Button from '../../../../components/Button/Button';
 import '../Cards.css';
 import propTypes from 'prop-types';
 
@@ -14,8 +15,16 @@ export default function CardRecentlyUpdated({cardImg, alt, gameTitle, cardText})
 
       <section className="card-info __recent-info">
         <article className="card-info-btns">
-          <span className="btn btn-border">In Library</span>
-          <span className="btn btn-dark btn-recent">View Updates</span>
+          <Button
+            css="btn btn-border"
+            id="viewInLib">
+            In Library
+          </Button>
+          <Button
+            css="btn btn-dark btn-recent"
+            id="viewUpdate">
+            View Updates
+          </Button>
         </article>
 
       </section>

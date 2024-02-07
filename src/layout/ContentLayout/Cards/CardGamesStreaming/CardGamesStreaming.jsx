@@ -30,10 +30,10 @@ export default function CardGamesStreaming({cardImg, gameTitle, counter}) {
         </article>
 
         <Button
-          type="button"
-          nameClass="btn btn-dark"
-          value="Store Page"
-        />
+          css="btn btn-dark"
+          id="storepage">
+            Store Page
+        </Button>
       </section>
     </article>
   );

@@ -3,6 +3,7 @@ import propTypes from 'prop-types';
 
 // Icons
 import logoWin from '../../../../assets/img/Windows8.svg';
+import Button from '../../../../components/Button/Button';
 
 export default function CardFreeToPlay({cardImg, gameTitle}) {
   return(
@@ -17,7 +18,11 @@ export default function CardFreeToPlay({cardImg, gameTitle}) {
 
         <section className="card-info-price">
           <span className="card-info__time-offer __text-free">Free</span>
-          <span className="btn btn-accent __btn-playnow">Play Now</span>
+          <Button
+            css="btn btn-accent __btn-playnow"
+            id="playNow">
+            Play Now
+          </Button>
         </section>
 
       </section>

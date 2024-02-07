@@ -8,6 +8,7 @@
   position:relative;
   border-radius:3px;
   color:var(--Text-Dim);
+  white-space:nowrap;
   cursor:default;
 }
 .list-link{
@@ -58,7 +59,7 @@
   column-gap:10px;
 }
 .__generalItem{
-  padding:0;
+  padding:0 5px;
 }
 .__generalLink{
   color:var(--Text-Main);
@@ -101,4 +102,10 @@
 }
 .__catalog-item:hover{
   background-color:var(--Background-Highlight);
+}
+
+.__settings-btn{
+  display:flex;
+  padding:0;
+  align-items:center;
 }

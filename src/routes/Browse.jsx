@@ -117,8 +117,12 @@ export default function Browse() {
             <ListItem css="__generalItem">
               <Link
                 to="./#"
-                className="btn __btn-shop __btn-interaction">
-                <VscSettingsGear />
+                className="list-link __settings-btn">
+                <Button
+                  css="btn __btn-shop __btn-interaction"
+                  id="settings">
+                  <VscSettingsGear />
+                </Button>
               </Link>
             </ListItem>
           </List>

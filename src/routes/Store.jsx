@@ -12,6 +12,7 @@ import MenuNavigation from '../layout/MenuNavigation/MenuNavigation';
 import Header from '../layout/ContentLayout/Header/Header';
 import Footer from '../layout/Footer/Footer';
 import StoreContent from '../layout/StoreContent/StoreContent';
+import Button from '../components/Button/Button';
 
 
 export default function Store() {
@@ -96,8 +97,12 @@ export default function Store() {
             <ListItem css="__generalItem">
               <Link
                 to="./#"
-                className="btn __btn-shop __btn-interaction">
-                <VscSettingsGear />
+                className="list-link __settings-btn">
+                <Button
+                  css="btn __btn-shop __btn-interaction"
+                  id="settings">
+                  <VscSettingsGear />
+                </Button>
               </Link>
             </ListItem>
           </List>

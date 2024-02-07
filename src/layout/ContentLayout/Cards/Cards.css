@@ -61,11 +61,6 @@
   font:var(--Text-HeadingSmall);
 }
 
-.card-info__wishlist{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
 
 
 /* CATEGORY */

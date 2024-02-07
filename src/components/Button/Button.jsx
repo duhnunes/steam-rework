@@ -1,10 +1,10 @@
 import propTypes from 'prop-types';
 import './Button.css';
 
-const Button = ({type, css, children})=> {
+const Button = ({type, css, id, children})=> {
   return(
     <>
-      <button type={type} className={css}>{children}</button>
+      <button type="button" className={css} id={id}>{children}</button>
     </>
   );
 };

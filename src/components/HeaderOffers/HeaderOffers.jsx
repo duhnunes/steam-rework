@@ -8,7 +8,9 @@ export default function HeaderOffers({title}) {
   return(
     <div className="headerOffers-area">
       <H2 content={title} />
-      <Button type="button" nameClass="btn btn-border" value="See more" />
+      <Button 
+        css="btn btn-border"
+        id="seeMore">See more</Button>
     </div>
   );
 }

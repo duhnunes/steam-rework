@@ -15,6 +15,13 @@
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
+## 0.0.11.1
+```ruby
+- [Fix] some things
+- [Change] buttons in Button Component
+- [Improvement] Clean Button code
+
+```
 
 ## 0.0.11
 ```ruby
