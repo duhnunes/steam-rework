@@ -7,7 +7,16 @@ import { FaThList } from 'react-icons/fa';
 import { BsFillGrid3X2GapFill } from 'react-icons/bs';
 import { TbFilterOff } from 'react-icons/tb';
 
-import cardGame1 from '../assets/img/card-games/01.png';
+import logoWin from '../assets/img/Windows8.svg';
+import wishlist from '../assets/img/Favorite border.svg';
+import cardGame1 from '../assets/img/browse/01.png';
+import cardGame2 from '../assets/img/browse/02.png';
+import cardGame3 from '../assets/img/browse/03.png';
+import cardGame4 from '../assets/img/browse/04.png';
+import cardGame5 from '../assets/img/browse/05.png';
+import cardGame6 from '../assets/img/browse/06.png';
+import cardGame7 from '../assets/img/browse/07.png';
+
 
 // Components
 import MenuNavigation from '../layout/MenuNavigation/MenuNavigation';
@@ -18,24 +27,11 @@ import BrowseSteam from '../layout/ContentLayout/SectionCards/BrowseSteam/Browse
 import Header from '../layout/ContentLayout/Header/Header';
 import H2 from '../components/H2/H2';
 import Button from '../components/Button/Button';
-import { useState } from 'react';
+import Arrows from '../components/Arrows/Arrows';
+import Pagination from '../components/Pagination/Pagination';
+
 
 export default function Browse() {
-
-  const [openTopLevel, setOpenTopLevel] = useState(false);
-  const [openGenres, setOpenGenres] = useState(false);
-  const [openSubGenres, setOpenSubGenres] = useState(false);
-  const [openVisual, setOpenVisual] = useState(false);
-  const [openThemes, setOpenThemes] = useState(false);
-  const [openFeatures, setOpenFeatures] = useState(false);
-  const [openPlayers, setOpenPlayers] = useState(false);
-  const [openPlatform, setOpenPlatform] = useState(false);
-  const [openLanguage, setOpenLanguage] = useState(false);
-  const [openPrice, setOpenPrice] = useState(false);
-  const [openAchievements, setOpenAchievements] = useState(false);
-  const [openTradingCards, setOpenTradingCards] = useState(false);
-  const [openItems, setOpenItems] = useState(false);
-
   return(
     <>
       <MenuNavigation css="">
@@ -259,12 +255,13 @@ export default function Browse() {
             </article>
 
             {/* FILTERS 1 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenTopLevel(!openTopLevel)}>
+            <details className="catalog-filter" open>
+              <summary className="catalog-filter-header">
                 <h3>Top-Level Genres</h3>
-                <span className={`arrow btn btn-x ${openTopLevel ? 'up' : 'down'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openTopLevel ? '' : 'active'}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item active">
                     <p>Adventure</p>
@@ -292,16 +289,17 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 2 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenGenres(!openGenres)}>
+            <details className="catalog-filter" open>
+              <summary className="catalog-filter-header">
                 <h3>Genres</h3>
-                <span className={`arrow btn btn-x ${openGenres ? 'up' : 'down'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openGenres ? '' : 'active'}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item active">
                     <p>Shooter</p>
@@ -329,35 +327,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 3 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenSubGenres(!openSubGenres)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Sub-genres</h3>
-                <span className={`arrow btn btn-x ${openSubGenres ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openSubGenres ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -366,35 +365,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 4 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenVisual(!openVisual)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Visuals & Viewpoint</h3>
-                <span className={`arrow btn btn-x ${openVisual ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openVisual ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -403,35 +403,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 5 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenThemes(!openThemes)}>
-                <h3>Themes & Moods</h3>
-                <span className={`arrow btn btn-x ${openThemes ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openThemes ? 'active' : ''}`}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
+                <h3>Sub-genres</h3>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -440,35 +441,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 6 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenFeatures(!openFeatures)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Features</h3>
-                <span className={`arrow btn btn-x ${openFeatures ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openFeatures ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -477,35 +479,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 7 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenPlayers(!openPlayers)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Players</h3>
-                <span className={`arrow btn btn-x ${openPlayers ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openPlayers ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -514,35 +517,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 8 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenPlatform(!openPlatform)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Platform</h3>
-                <span className={`arrow btn btn-x ${openPlatform ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openPlatform ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -551,35 +555,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 9 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenLanguage(!openLanguage)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Language</h3>
-                <span className={`arrow btn btn-x ${openLanguage ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openLanguage ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -588,35 +593,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 10 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenPrice(!openPrice)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Price</h3>
-                <span className={`arrow btn btn-x ${openPrice ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openPrice ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -625,35 +631,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 11 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenAchievements(!openAchievements)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Achievements</h3>
-                <span className={`arrow btn btn-x ${openAchievements ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openAchievements ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -662,35 +669,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 12 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenTradingCards(!openTradingCards)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Trading Cards</h3>
-                <span className={`arrow btn btn-x ${openTradingCards ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openTradingCards ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -699,35 +707,36 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
             {/* FILTERS 13 */}
-            <article className="catalog-filter">
-              <div className="catalog-filter-header" onClick={() => setOpenItems(!openItems)}>
+            <details className="catalog-filter">
+              <summary className="catalog-filter-header">
                 <h3>Items</h3>
-                <span className={`arrow btn btn-x ${openItems ? 'down' : 'up'}`}></span>
-              </div>
-              <section className={`catalog-filter-body ${openItems ? 'active' : ''}`}>
+                <Arrows />
+              </summary>
+              
+              <div className="catalog-filter-body">
                 <List css="__catalog">
                   <ListItem css="__catalog-item">
-                    <p>Item 1</p>
+                    <p>Item 01</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 2</p>
+                    <p>Item 02</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 3</p>
+                    <p>Item 03</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 4</p>
+                    <p>Item 04</p>
                     <span>5.000</span>
                   </ListItem>
                   <ListItem css="__catalog-item">
-                    <p>Item 5</p>
+                    <p>Item 05</p>
                     <span>5.000</span>
                   </ListItem>
                 </List>
@@ -736,19 +745,477 @@ export default function Browse() {
                   className="text-dim">
                 See More
                 </Link>
-              </section>
-            </article>
+              </div>
+            </details>
 
           </section>
 
           <section className="cards-area">
             <section className="cards-games-area">
+              {/* CARD 1 */}
               <article className="card">
-                <img src={cardGame1} alt="Fallout 4" />
+                <img src={cardGame1} alt="Fallout 4" className="cards-games-img" />
+                <section className="card-info">
+                  <h2>Fallout 4</h2>
+                  <article className="category-buttons">
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Open-World
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Post-Apocalyptic
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Single-Player
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Exploration
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    +
+                    </Button>
+                  </article>
+
+                  <article className="card-time-area">
+                    <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
+                    <span>Nov 10, 2015</span>
+                  </article>
+
+                  <article className="card-game-rate">
+                    <progress id="rateGame" value="80" max="100" className="progress-rate"></progress>
+                    <p className="card-rate-total">207,000</p>
+                    <p className="card-rate-total">User Reviews</p>
+                  </article>
+                  
+                </section>
+
+                <section className="card-interaction">
+                  <Button
+                    css="btn btn-dark"
+                    id="addFavorite">
+                    <img src={wishlist} alt="Wishlist this Game" />
+                  </Button>
+
+                  <section className="card-info-price">
+                    <span className="card-info__time-offer">Until October 31</span>
+                    <span className="card-info__discount">-75%</span>
+
+                    <article className="card-info__discount-diff">
+                      <span className="discount-before">$19.99</span>
+                      <span className="discount-after">$4.99</span>
+                    </article>
+                    <Button
+                      css="btn btn-secondary btn-buy"
+                      id="buynow">
+                    Add to Cart
+                    </Button>
+                  </section>
+                </section>
               </article>
+
+              {/* CARD 2 */}
+              <article className="card">
+                <img src={cardGame2} alt="Tom Clancy's The Division" className="cards-games-img" />
+                <section className="card-info">
+                  <h2>Tom Clancy’s The Division® 2</h2>
+                  <article className="category-buttons">
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Multiplayer
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Action
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Third-Person Shooter
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Looter Shooter
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    +
+                    </Button>
+                  </article>
+
+                  <article className="card-time-area">
+                    <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
+                    <span>Jan 12, 2023</span>
+                  </article>
+
+                  <article className="card-game-rate">
+                    <progress id="rateGame" value="60" max="100" className="progress-rate"></progress>
+                    <p className="card-rate-total">9,500</p>
+                    <p className="card-rate-total">User Reviews</p>
+                  </article>
+                  
+                </section>
+
+                <section className="card-interaction">
+                  <Button
+                    css="btn btn-dark"
+                    id="addFavorite">
+                    <img src={wishlist} alt="Wishlist this Game" />
+                  </Button>
+
+                  <section className="card-info-price">
+                    <span className="discount-before">$29.99</span>
+                    <Button
+                      css="btn btn-secondary btn-buy"
+                      id="buynow">
+                    Add to Cart
+                    </Button>
+                  </section>
+        
+                </section>
+
+              </article>
+
+              {/* CARD 3 */}
+              <article className="card">
+                <img src={cardGame3} alt="Remnant 2" className="cards-games-img" />
+                <section className="card-info">
+                  <h2>Remnant II</h2>
+                  <article className="category-buttons">
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Souls-like
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    RPG
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Action
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Adventure
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    +
+                    </Button>
+                  </article>
+
+                  <article className="card-time-area">
+                    <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
+                    <span>Jul 25, 2023</span>
+                  </article>
+
+                  <article className="card-game-rate">
+                    <progress id="rateGame" value="80" max="100" className="progress-rate"></progress>
+                    <p className="card-rate-total">23,000</p>
+                    <p className="card-rate-total">User Reviews</p>
+                  </article>
+                  
+                </section>
+
+                <section className="card-interaction">
+                  <Button
+                    css="btn btn-dark"
+                    id="addFavorite">
+                    <img src={wishlist} alt="Wishlist this Game" />
+                  </Button>
+
+                  <section className="card-info-price">
+                    <span className="discount-before">$49.99</span>
+                    <Button
+                      css="btn btn-secondary btn-buy"
+                      id="buynow">
+                    Add to Cart
+                    </Button>
+                  </section>
+        
+                </section>
+
+              </article>
+
+              {/* CARD 4 */}
+              <article className="card">
+                <img src={cardGame4} alt="Fallout VR" className="cards-games-img" />
+                <section className="card-info">
+                  <h2>Fallout VR</h2>
+                  <article className="category-buttons">
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    VR
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Open-World
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Post-Apocalyptic
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    RPG
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    +
+                    </Button>
+                  </article>
+
+                  <article className="card-time-area">
+                    <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
+                    <p className="text-dim">VR</p>
+                    <span>Dec 12, 2017</span>
+                  </article>
+
+                  <article className="card-game-rate">
+                    <progress id="rateGame" value="60" max="100" className="progress-rate"></progress>
+                    <p className="card-rate-total">4,600</p>
+                    <p className="card-rate-total">User Reviews</p>
+                  </article>
+                  
+                </section>
+
+                <section className="card-interaction">
+                  <Button
+                    css="btn btn-dark"
+                    id="addFavorite">
+                    <img src={wishlist} alt="Wishlist this Game" />
+                  </Button>
+
+                  <section className="card-info-price">
+                    <span className="card-info__time-offer">Until October 31</span>
+                    <span className="card-info__discount">-75%</span>
+
+                    <article className="card-info__discount-diff">
+                      <span className="discount-before">$59.99</span>
+                      <span className="discount-after">$14.99</span>
+                    </article>
+                    <Button
+                      css="btn btn-secondary btn-buy"
+                      id="buynow">
+                    Add to Cart
+                    </Button>
+                  </section>
+                </section>
+              </article>
+
+              {/* CARD 5 */}
+              <article className="card">
+                <img src={cardGame5} alt="Skibidi Toilet Hero" className="cards-games-img" />
+                <section className="card-info">
+                  <h2>Skibidi Toilet Hero</h2>
+                  <article className="category-buttons">
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Action
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Indie
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Casual FPS
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Faced-Paced
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    +
+                    </Button>
+                  </article>
+
+                  <article className="card-time-area">
+                    <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
+                    <span>Q4 2023</span>
+                  </article>
+
+                  <article className="card-game-rate">
+                    <progress id="rateGame" value="60" max="100" className="progress-rate"></progress>
+                    <p className="card-rate-total">No Reviews Yet</p>
+                    <p className="card-rate-total"> </p>
+                  </article>
+                  
+                </section>
+
+                <section className="card-interaction">
+                  <Button
+                    css="btn btn-dark"
+                    id="addFavorite">
+                    <img src={wishlist} alt="Wishlist this Game" />
+                  </Button>
+
+                  <section className="card-info-price">
+                    <span className="card-info__time-offer">Coming Soon</span>
+                  </section>
+                </section>
+              </article>
+
+              {/* CARD 6 */}
+              <article className="card">
+                <img src={cardGame6} alt="Borderlands 2" className="cards-games-img" />
+                <section className="card-info">
+                  <h2>Borderlands 2</h2>
+                  <article className="category-buttons">
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Loot
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Shooter
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Action
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Co-Op
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    +
+                    </Button>
+                  </article>
+
+                  <article className="card-time-area">
+                    <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
+                    <span>Sep 18, 2012</span>
+                  </article>
+
+                  <article className="card-game-rate">
+                    <progress id="rateGame" value="90" max="100" className="progress-rate"></progress>
+                    <p className="card-rate-total">187,000</p>
+                    <p className="card-rate-total">User Reviews</p>
+                  </article>
+                  
+                </section>
+
+                <section className="card-interaction">
+                  <Button
+                    css="btn btn-dark"
+                    id="addFavorite">
+                    <img src={wishlist} alt="Wishlist this Game" />
+                  </Button>
+
+                  <section className="card-info-price">
+                    <span className="discount-before">$19.99</span>
+                    <Button
+                      css="btn btn-secondary btn-buy"
+                      id="buynow">
+                    Add to Cart
+                    </Button>
+                  </section>
+                </section>
+              </article>
+
+              {/* CARD 7 */}
+              <article className="card">
+                <img src={cardGame7} alt="The Outer Worlds" className="cards-games-img" />
+                <section className="card-info">
+                  <h2>The Outer Worlds</h2>
+                  <article className="category-buttons">
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Action
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    RPG
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Exploration
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    Open-World
+                    </Button>
+                    <Button
+                      css="btn btn-dark btn-category"
+                      id="">
+                    +
+                    </Button>
+                  </article>
+
+                  <article className="card-time-area">
+                    <img src={logoWin} alt="Compatible Platform" className="card-info-win" />
+                    <span>Oct, 23 2020</span>
+                  </article>
+
+                  <article className="card-game-rate">
+                    <progress id="rateGame" value="80" max="100" className="progress-rate"></progress>
+                    <p className="card-rate-total">20,000</p>
+                    <p className="card-rate-total">User Reviews</p>
+                  </article>
+                  
+                </section>
+
+                <section className="card-interaction">
+                  <Button
+                    css="btn btn-dark"
+                    id="addFavorite">
+                    <img src={wishlist} alt="Wishlist this Game" />
+                  </Button>
+
+                  <section className="card-info-price">
+                    <span className="discount-before">$29.99</span>
+                    <Button
+                      css="btn btn-secondary btn-buy"
+                      id="buynow">
+                    Add to Cart
+                    </Button>
+                  </section>
+                </section>
+              </article>
+
             </section>
 
-            <section className="pagination">haha</section>
+            <Pagination />
+            
           </section>
         </section>
 

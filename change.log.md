@@ -15,6 +15,14 @@
 # ALPHA VERSION
 ###### The ALPHA version is the initial development version before the first release. It is cataloged as a form of personal historical organization.  
 
+## 0.0.11.2
+```ruby
+- [Transform] arrows in Componenet
+- [Improvement] filters(REACT.JS) function in HTML/CSS
+- [Improvement] finish Card in Browse page
+
+```
+
 ## 0.0.11.1
 ```ruby
 - [Fix] some things

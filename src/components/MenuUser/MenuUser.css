@@ -29,6 +29,9 @@
   position:relative;
   cursor:pointer;
 }
+.menuUser span {
+  transform:rotate(45deg);
+}
 .avatar{
   width:24px;
   height:24px;
@@ -41,19 +44,3 @@
 .balance-wallet{
   color:var(--Text-Dim);
 }
-.arrowdown{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-color:var(--Text-Main);
-  translate:0 -3px;
-  width:6px;
-  height:6px;
-}
-.down{
-  rotate:45deg;
-}
-.up{
-  rotate:-135deg;
-}
-

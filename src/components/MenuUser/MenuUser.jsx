@@ -8,6 +8,7 @@ import DropdownList, { DropdownListItem } from '../DropdownList/DropdownList';
 import { FaUserGroup, FaBell, FaEnvelopeCircleCheck, FaGear } from 'react-icons/fa6';
 import { IoMegaphone } from 'react-icons/io5';
 import { MdOutlineMonitor } from 'react-icons/md';
+import Arrows from '../Arrows/Arrows';
 
 const MenuUser = () => {
 
@@ -62,11 +63,11 @@ const MenuUser = () => {
         {/* Avatar */}
         <img className="avatar" src={avatar} alt="Avatar User" />
         {/* User Name */}
-        <span className="userName">DuH Nunes</span>
+        <h2 className="userName">DuH Nunes</h2>
         {/* Balance Wallet */}
-        <span className="balance-wallet">$5.25</span>
+        <p className="balance-wallet">$5.25</p>
         {/* Arrow Down */}
-        <span className="arrowdown arrow down"></span>
+        <Arrows />
 
         <section className={`dropdown-area userMenu ${openUserMenu? 'active' : ''}`}>
           <div className="dropdown-area-inside">

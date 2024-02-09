@@ -1,0 +1,12 @@
+.arrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-color:var(--Text-Main);
+  translate:0 -3px;
+  width:12px;
+  height:12px;
+}
+.up{
+  rotate:-135deg;
+}

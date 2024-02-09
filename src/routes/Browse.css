@@ -39,6 +39,7 @@
   padding:15px;
   border-radius:5px;
   background-color:var(--Background-Main);
+  margin:0 0 auto;
 }
 .select-filter-area{
   display:flex;
@@ -75,13 +76,21 @@
   align-items:center;
   justify-content:space-between;
   padding-top:10px;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
+.catalog-filter summary > .arrow {
+  transform:rotate(-135deg);
+}
+.catalog-filter[open] summary > .arrow {
+  transform:rotate(45deg);
+}
+
 .catalog-filter-body{
   margin:10px 0 15px;
-  max-height:0;
-  overflow:hidden;
-}
-.catalog-filter-body.active{
   max-height:100vh;
   background-color:transparent;
 }
@@ -91,7 +100,7 @@
   display:flex;
   flex-direction:column;
   align-items:flex-end;
-  justify-content:space-between;
+  row-gap:15px;
 }
 .cards-area .cards-games-area{
   width:100%;
@@ -103,14 +112,57 @@
   background-color:var(--Background-Main);
   border-radius:5px;
   padding:15px;
+  display:grid;
+  grid-template-columns:292px 40% 1fr;
+  grid-gap:15px;
 }
-
 .card{
   display:flex;
   flex-direction:column;
   justify-content:center;
 }
-.card img{
+.card .cards-games-img{
   width:292px;
   height:137px;
+}
+.card .card-info{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+.card .card-time-area{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  column-gap:10px;
+}
+.card .card-game-rate{
+  display:flex;
+  align-items:center;
+  column-gap:10px;
+}
+.progress-rate{
+  height:4px;
+  border-radius:2px;
+  width:144px;
+}
+.progress-rate::-webkit-progress-bar{
+  background-color:var(--AccentRed);
+  border-radius:2px;
+}
+.progress-rate::-webkit-progress-value{
+  background-color:var(--ColorPrimary);
+  border-radius:2px;
+}
+.card-rate-total{
+  font:var(--Text-BodyMedium);
+  color:var(--ColorSecondary);
+}
+
+.card .card-interaction{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  justify-content:space-between;
 }
